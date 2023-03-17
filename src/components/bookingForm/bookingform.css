@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
+.header {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  /* background-image: url("./assets/img/contact-mobile-header.png"); */
+  background-position: top;
+
+}
+
+.overlay {
+  background-image: linear-gradient(
+    135deg,
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(255, 178, 0, 0.55),
+    rgba(255, 207, 0, 0.55)
+  );
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  padding-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.overlay p {
+  font-style: italic;
+  text-align: center;
+  rotate: -6deg;
+  color: white;
+  font-size: 30px;
+}
+
+.start-headline {
+  text-shadow: 2px 2px 2px #ffcf00;
+  color: #ffb200;
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  rotate: -6deg;
+}
+
+.header-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header-btn {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.site-footer {
+  background-color: #ffb200;
+}
+
+.logo {
+  max-height: 70px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03a4b6;
+  padding-left: 40px;
+}
+
+h1 {
+  font-family: "Modak";
+  color: #ffb200;
+  font-weight: bold;
+}
+
+.KB-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  justify-self: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 60vh;
+  padding-top: 3rem;
+}
+
+.field {
+  border: 1px solid #03a4b6;
+  min-width: 300px;
+}
+
+.small-text {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.fa {
+  margin: 12px 6px;
+}
+
+.fa-solid {
+  color: #03a5b6;
+}
+
+.not-yet {
+  color: #ffb200;
+}
+
+.form-navigation-active {
+  box-shadow: 0 0 5px 1px #ffcf00, 0 0 5px 3px #ffcf00 inset;
+  border-radius: 50%;
+}
+
+.text-danger {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.next-button {
+  background-color: #03a5b6;
+  font-size: 200px;
+}
+
+.tandc {
+  background-color: rgb(226, 225, 225);
+}
+
+.range-display {
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #ffb200;
+}
+
+.faq-blurb {
+  max-width: 400px;
+  background-color: rgb(226, 225, 225);
+}

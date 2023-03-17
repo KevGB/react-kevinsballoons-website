@@ -1,0 +1,48 @@
+.scrolling-gallery-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-gallery {
+  height: 100px;
+  width: 3550px;
+}
+.scrolling-gallery img {
+  height: 100px;
+  margin-right: -5px;
+}
+
+.initiate-scroll {
+  animation: galleryscroll 15s linear infinite;
+}
+
+@keyframes galleryscroll {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1430px;
+  }
+}
+
+.scrolling-marquee {
+  height: 115px;
+  width: 2600px;
+}
+.scrolling-marquee img {
+  margin-right: -5px;
+  margin-right: 50px;
+}
+
+.initiate-marquee {
+  animation: marqueescroll 30s linear infinite;
+}
+
+@keyframes marqueescroll {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1800px;
+  }
+}

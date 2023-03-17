@@ -1,0 +1,19 @@
+.fab {
+  background-color: #04d3eaf4;
+  border-radius: 50%;
+  height: 90px;
+  aspect-ratio: 1/1;
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  z-index: 2000;
+  box-shadow: 3px 3px 10px 2px #004ea8b9;
+  color: #ffcf00;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.fab span {
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 1px #ffb200;
+}
