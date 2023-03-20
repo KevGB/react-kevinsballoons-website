@@ -1,0 +1,29 @@
+.teal {
+  background-color: #03a5b6;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullwidth {
+  background-color: #ffb200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.videoplayer {
+  justify-self: center;
+}
+
+.marketing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.marketing-text h1 {
+  font-size: 1.8rem;
+}

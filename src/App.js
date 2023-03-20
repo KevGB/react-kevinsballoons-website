@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import FAB from './components/FAB';
 import BookingForm from './components/booking-Form/bookingForm';
 import CyclicGallery from './components/CyclicGallery';
-import VideoPlayer from './components/VideoPlayer';
+import SectionMarketing from './components/SectionMarketing';
 import './App.css';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
     <SubscribeForm/>
     <TestimonialCarousel/>
     <CyclicGallery/>
-    <VideoPlayer/>
+    <SectionMarketing/>
     <BookingForm/>
     <Footer/>
     </>

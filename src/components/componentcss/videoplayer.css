@@ -1,6 +1,6 @@
 .phone-leaning-container {
   display: flex;
-  max-width: 60%;
+  max-width: 65%;
 }
 
 .phone {
@@ -70,6 +70,15 @@ video {
   color: #ffb200;
 }
 
-.btn:hover {
-  color: #ffcf00;
+.outline{
+    border: 1px solid green;
+}
+
+@media  (max-width: 768px) {
+ .leaning-img-container{
+    display: none;
+ }
+ .phone{
+    justify-self:center;
+ }
 }
