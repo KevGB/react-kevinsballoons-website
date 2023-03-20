@@ -1,0 +1,64 @@
+.overlay {
+  background-image: linear-gradient(
+    135deg,
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(3, 165, 182, 0.55),
+    rgba(255, 178, 0, 0.55),
+    rgba(255, 207, 0, 0.55)
+  );
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  padding-top: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.overlay p {
+  font-style: italic;
+  text-align: center;
+  rotate: -6deg;
+  color: white;
+  font-size: 30px;
+}
+
+.header {
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  padding: 0;
+  background-position: top;
+  position: relative;
+}
+
+.start-headline {
+  text-shadow: 2px 2px 2px #ffcf00;
+  color: #ffb200;
+  font-size: 80px;
+  font-style: italic;
+  text-align: center;
+  rotate: -6deg;
+}
+
+.header-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.booking-btn {
+    box-shadow: 1px 1px 10px #004ea8b9;
+    color: white;
+    text-shadow: 2px 1px 10px #004ea8b9;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #ffcf00;
+    width: 100%;
+    background-color: #04d3eaf4;
+    border-radius: 5px;
+  }
+
+

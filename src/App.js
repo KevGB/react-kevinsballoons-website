@@ -1,32 +1,49 @@
-import React from 'react';
-// import NavigationBarSmall from './components/NavigationBar';
-import NavigationBarLarge from './components/NavigationBarLarge';
-import ScrollingGallery from './components/ScrollingGallery';
-import ScrollingLogos from './components/ScrollingLogos';
-import SubscribeForm from './components/SubscribeForm';
-import TestimonialCarousel from './components/TestimonialCarousel';
-import Footer from './components/Footer';
-import FAB from './components/FAB';
-import BookingForm from './components/booking-Form/bookingForm';
-import CyclicGallery from './components/CyclicGallery';
-import SectionMarketing from './components/SectionMarketing';
-import './App.css';
+import React from "react";
+import Homepage from "./pages/Homepage";
+import Servicespage from "./pages/Servicespage";
+import Contactpage from "./pages/Contactpage";
+import Bookingpage from "./pages/Bookingpage";
+import NavigationBarLarge from "./components/NavigationBarLarge";
+import ThankYouPage from "./pages/ThankYouPage";
+import Gallerypage from "./pages/Gallerypage";
+import Archespage from "./pages/Archespage";
+import Centerpiecepage from "./pages/Centerpiecepage";
+import Columnpage from "./pages/Columnpage";
+import StartForm from "./components/booking-Form/pages/StartForm";
+import DurationForm from "./components/booking-Form/pages/DurationForm";
+import WhenForm from "./components/booking-Form/pages/WhenForm";
+import WhereForm from "./components/booking-Form/pages/WhereForm";
+import GuestsForm from "./components/booking-Form/pages/GuestForm";
+import PersonalInfo from "./components/booking-Form/pages/PersonalInfo";
+import AdditionalInfo from "./components/booking-Form/pages/AdditionalInfo";
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
-    <>
-    {/* <NavigationBarSmall/> */}
-    <NavigationBarLarge/>
-    <ScrollingGallery/>
-    <ScrollingLogos/>
-    <FAB/>
-    <SubscribeForm/>
-    <TestimonialCarousel/>
-    <CyclicGallery/>
-    <SectionMarketing/>
-    <BookingForm/>
-    <Footer/>
-    </>
+    <div className="App">
+      <NavigationBarLarge />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="services" element={<Servicespage />} />
+        <Route path="contact" element={<Contactpage />} />
+        <Route path="book" element={<Bookingpage />} />
+        <Route path="thankyou" element={<ThankYouPage />} />
+        <Route path="columns" element={<Columnpage />} />
+        <Route path="arches" element={<Archespage />} />
+        <Route path="centerpieces" element={<Centerpiecepage />} />
+        <Route path="gallery" element={<Gallerypage />} />
+        <Route path="bookingformstart" element={<StartForm />} />
+        <Route path="bookingformduration" element={<DurationForm />} />
+        <Route path="bookingforminfo" element={<PersonalInfo />} />
+        <Route path="bookingformwhen" element={<WhenForm />} />
+        <Route path="bookingformwhere" element={<WhereForm />} />
+        <Route path="bookingformguests" element={<GuestsForm />} />
+        <Route path="bookingformadditional" element={<AdditionalInfo />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
