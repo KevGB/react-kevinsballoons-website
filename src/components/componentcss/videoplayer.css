@@ -1,0 +1,75 @@
+.phone-leaning-container {
+  display: flex;
+  max-width: 60%;
+}
+
+.phone {
+  background-image: url(../../app/assets/img/phone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 244px;
+}
+
+.outline {
+  border: 1px solid green;
+}
+
+.phone-container {
+  width: 244px;
+  padding-right: 0px;
+  margin-right: 0px;
+  display: flex;
+}
+
+video {
+  margin-top: 25px;
+  margin-bottom: 0;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+
+.leaning-img-container {
+  width: 225px;
+  padding-top: 120px;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: flex;
+  position: relative;
+}
+
+.leaning-img {
+  position: absolute;
+  height: 400px;
+  width: 225px;
+  bottom: 0px;
+  left: -15px;
+}
+
+.instagram-div {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-img {
+  height: 40px;
+  width: 40px;
+}
+
+.booking-btn {
+  box-shadow: 1px 1px 10px #004ea8b9;
+  color: white;
+  text-shadow: 2px 1px 10px #004ea8b9;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid #ffcf00;
+  width: 100%;
+  background-color: #04d3eaf4;
+}
+.booking-btn :hover {
+  color: #ffb200;
+}
+
+.btn:hover {
+  color: #ffcf00;
+}
