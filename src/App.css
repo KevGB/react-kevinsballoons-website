@@ -1,13 +1,4 @@
-@media  (max-width: 480px) {
-  .navbar-large{
-      display: none;
-  }
-}
-@media  (min-width: 480px) {
-  .navbar-small{
-      display: none;
-  }
-}
+
 
 .outline{
   border: 1px solid green;

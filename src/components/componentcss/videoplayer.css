@@ -36,6 +36,7 @@ video {
   margin-left: 0px;
   display: flex;
   position: relative;
+ 
 }
 
 .leaning-img {
@@ -63,22 +64,22 @@ video {
   font-size: 25px;
   font-weight: bold;
   border: 2px solid #ffcf00;
-  width: 100%;
+  width: 200%;
   background-color: #04d3eaf4;
 }
 .booking-btn :hover {
   color: #ffb200;
 }
 
-.outline{
-    border: 1px solid green;
-}
 
-@media  (max-width: 768px) {
- .leaning-img-container{
+
+@media  (max-width: 600px) {
+
+  .leaning-img{
     display: none;
  }
  .phone{
     justify-self:center;
  }
 }
+

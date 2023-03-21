@@ -1,15 +1,17 @@
-.fab{
-    color: aliceblue;
+.fab {
+  color: aliceblue;
 }
 
-.cyclicgallery{
-    color: aliceblue;
+.cyclicgallery {
+  color: aliceblue;
 }
 
-.testimonialcarousel{
-    color: aliceblue;
+.testimonial-section {
+  position: relative;
 }
 
-.header{
-background-image: url(../../app/assets/img/theme-waterfall.jpg);
+
+
+.header {
+  background-image: url(../../app/assets/img/theme-waterfall.jpg);
 }

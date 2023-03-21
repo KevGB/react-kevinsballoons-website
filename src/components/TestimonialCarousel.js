@@ -27,7 +27,7 @@ const TestimonialCarousel = () => {
 
   return (
       <div className="carousel">
-        <Carousel activeIndex={activeIndex} next={nextSlide} previous={prevSlide}>
+        <Carousel className="carousel " activeIndex={activeIndex} next={nextSlide} previous={prevSlide}>
           <CarouselIndicators items={TESTIMONIALS} activeIndex={activeIndex} onClickHandler={setActiveIndex} />
           {slides}
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={prevSlide} />
@@ -35,6 +35,6 @@ const TestimonialCarousel = () => {
         </Carousel>
       </div>
   );
-};
+}; 
 
 export default TestimonialCarousel;

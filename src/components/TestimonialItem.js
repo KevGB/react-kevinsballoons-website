@@ -5,10 +5,10 @@ const TestimonialItem = ({ testimonial }) => {
   const { firstName, lastName, quote } = testimonial;
   return (
     <Card style={{
-        maxWidth: "250px",
+        maxWidth: "200px",
         paddingLeft: "14px",
         paddingRight: "10px",
-        backgroundColor: "#03a4b6b8",
+        backgroundColor: "#03a4b6eb",
         borderRadius: "20px",
         height: "300px"
     }}>

@@ -16,6 +16,8 @@ const Header = (props) => {
         <div className="overlay">
           <h1 className="start-headline">{headline}</h1>
           <p>{tagline}</p>
+          <br/>
+          <br/>
           <div
             className="  header-btn-container"
             style={{ display: { display } }}

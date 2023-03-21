@@ -20,8 +20,10 @@ const Homepage = () => {
       <SectionMarketing />
       <ScrollingGallery />
       <SubscribeForm />
-      <ScrollingLogos />
-      <TestimonialCarousel className="testimonialcarousel" />
+      <div className="testimonial-section">
+        <ScrollingLogos />
+        <TestimonialCarousel className="testimonialcarousel" />
+      </div>
     </div>
   );
 };
