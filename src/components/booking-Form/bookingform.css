@@ -136,6 +136,8 @@ h1 {
 
 .tandc {
   background-color: rgb(226, 225, 225);
+ padding: 10px;
+ border-radius: 5px;
 }
 
 .range-display {
@@ -147,4 +149,7 @@ h1 {
 .faq-blurb {
   max-width: 400px;
   background-color: rgb(226, 225, 225);
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
 }
