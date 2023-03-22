@@ -16,7 +16,7 @@ import Logo from "../app/assets/img/BowtieLogo.png";
 const NavigationBarSmall = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <Navbar className="navbar navbar-small"  >
+    <Navbar className="navbar navbar-small" dark sticky="top">
       <NavbarBrand className="ms-2" href="/">
         <img src={Logo} alt="Kevin's Balloons logo" className="float-start" />
       </NavbarBrand>

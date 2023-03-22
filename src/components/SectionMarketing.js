@@ -6,7 +6,7 @@ const SectionMarketing = () => {
     <div className="fullwidth orange">
       <div className="teal">
         <div className="marketing-text">
-          <h4>Fun and Modern Designs that Will Blow Your Mind</h4>
+          <h4>Fun and Modern Designs that Will Blow Your Mind!</h4>
           <p class="">
             Are you tired of the same old boring balloon animals and swords?
             Look no further! Kevin is a world-renowned balloon artist with over

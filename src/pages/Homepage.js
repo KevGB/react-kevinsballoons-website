@@ -16,14 +16,14 @@ const Homepage = () => {
         display={true}
         className="header"
       />
+      <ScrollingGallery />
       <FAB className="fab" />
       <SectionMarketing />
-      <ScrollingGallery />
-      <SubscribeForm />
-      <div className="testimonial-section">
-        <ScrollingLogos />
-        <TestimonialCarousel className="testimonialcarousel" />
+      <div className=" testimonial-section">
+        <ScrollingLogos  />
+        <TestimonialCarousel className="testimonialcarousel " />
       </div>
+      <SubscribeForm />
     </div>
   );
 };

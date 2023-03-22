@@ -9,6 +9,7 @@ import Gallerypage from "./pages/Gallerypage";
 import Archespage from "./pages/Archespage";
 import Centerpiecepage from "./pages/Centerpiecepage";
 import Columnpage from "./pages/Columnpage";
+import Garlandpage from "./pages/Garlandpage";
 import StartForm from "./components/booking-Form/pages/StartForm";
 import DurationForm from "./components/booking-Form/pages/DurationForm";
 import WhenForm from "./components/booking-Form/pages/WhenForm";
@@ -23,7 +24,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <NavigationBarLarge />
+      <NavigationBarLarge className="navigationbar" sticky />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="services" element={<Servicespage />} />
@@ -33,6 +34,7 @@ function App() {
         <Route path="columns" element={<Columnpage />} />
         <Route path="arches" element={<Archespage />} />
         <Route path="centerpieces" element={<Centerpiecepage />} />
+        <Route path="garlands" element={<Garlandpage />} />
         <Route path="gallery" element={<Gallerypage />} />
         <Route path="bookingformstart" element={<StartForm />} />
         <Route path="bookingformduration" element={<DurationForm />} />

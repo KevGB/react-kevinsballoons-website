@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import "./componentcss/footer.css";
 
@@ -12,33 +12,30 @@ const Footer = () => {
             <h6>Links</h6>
             <ul className="list-unstyled">
               <li>
-                <div to="/">Home</div>
+                <Link className="link" to="/">Home</Link>
               </li>
               <li>
-                <div to="/contact">Contact</div>
+                <Link className="link" to="/contact">Contact</Link>
               </li>
               <li>
-                <div to="/services">Services</div>
+                <Link className="link" to="/services">Services:</Link>
               </li>
               <li>
                 <ul>
                   <li>
-                    <div to="/book">Balloon Twisting</div>
+                    <Link className="link" to="/book">Balloon Twisting</Link>
                   </li>
                   <li>
-                    <div to="/arches">Balloon Arches</div>
+                    <Link className="link" to="/arches"> Arches</Link>
                   </li>
                   <li>
-                    <div to="/garlands">Balloon Garlands</div>
+                    <Link className="link" to="/garlands"> Garlands</Link>
                   </li>
                   <li>
-                    <div to="/clusters">Balloon Clusters</div>
+                    <Link className="link" to="/columns"> Columns</Link>
                   </li>
                   <li>
-                    <div to="/deliverables">Deliverables</div>
-                  </li>
-                  <li>
-                    <div to="/centerpieces">Centerpieces</div>
+                    <Link className="link" to="/centerpieces">Centerpieces</Link>
                   </li>
                 </ul>
               </li>
@@ -55,7 +52,7 @@ const Footer = () => {
                 </div>
               </a>
               <br />
-              <div>
+              <div className="social-icons">
                 <a
                   className="btn btn-social-icon btn-instagram"
                   href="http://instagram.com/kevins.balloons"

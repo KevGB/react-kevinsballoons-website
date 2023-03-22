@@ -7,7 +7,7 @@ import Logo from "../app/assets/img/BowtieLogo.png";
 
 const NavigationBarLarge = () => {
   return (
-    <div className=" navbar">
+    <div className="navbar" >
       <NavItem>
         <NavLink className="nav-link" to="/services">
           Services
@@ -18,7 +18,7 @@ const NavigationBarLarge = () => {
           Book
         </NavLink>
       </NavItem>
-      <NavbarBrand className="ms-2" href="/">
+      <NavbarBrand className="logo" href="/">
         <img src={Logo} alt="Kevin's Balloons logo" className="float-start" />
       </NavbarBrand>
 

@@ -32,6 +32,7 @@
 .scrolling-marquee img {
   margin-right: -5px;
   margin-right: 50px;
+  width: 100px;
 }
 
 .initiate-marquee {
@@ -45,4 +46,10 @@
   100% {
     margin-left: -1800px;
   }
+}
+
+h4{
+  /* font-family: alegreya; */
+  font-style: italic;
+  color: #ffb200;
 }

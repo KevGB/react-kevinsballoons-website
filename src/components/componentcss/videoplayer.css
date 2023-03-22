@@ -36,7 +36,6 @@ video {
   margin-left: 0px;
   display: flex;
   position: relative;
- 
 }
 
 .leaning-img {
@@ -46,6 +45,8 @@ video {
   bottom: 0px;
   left: -15px;
 }
+
+
 
 .instagram-div {
   display: flex;
@@ -71,15 +72,11 @@ video {
   color: #ffb200;
 }
 
-
-
-@media  (max-width: 600px) {
-
-  .leaning-img{
+@media (max-width: 600px) {
+  .leaning-img {
     display: none;
- }
- .phone{
-    justify-self:center;
- }
+  }
+  .phone {
+    justify-self: center;
+  }
 }
-

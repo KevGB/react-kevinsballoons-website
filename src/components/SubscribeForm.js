@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import "./componentcss/subscribeform.css";
-import { Button } from "reactstrap";
 
 const SubscribeForm = () => {
   const [subscriptions, setSubscriptions] = useState([]);
@@ -12,6 +11,7 @@ const SubscribeForm = () => {
       ...subscriptions,
       { firstName: firstNameSubscribe, email: emailSubscribe },
     ]);
+    console.log(subscriptions);
   };
 
   return (

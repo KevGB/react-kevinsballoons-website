@@ -2,9 +2,16 @@ import React from "react";
 import kevleaning from "../app/assets/img/kev-transparent-background.png";
 import instagram from "../app/assets/img/instagram.png";
 import video from "../app/assets/video/balloonCompilation.mp4";
+import { useNavigate } from "react-router-dom";
+
 import "./componentcss/videoplayer.css";
 
 const VideoPlayer = () => {
+  const navigate = useNavigate();
+  const handleBook = () => {
+    navigate("/book");
+  };
+
   return (
     <div className=" row  phone-leaning-container ">
       <div className=" col  phone-container">
@@ -27,7 +34,9 @@ const VideoPlayer = () => {
       <div className=" col  leaning-img-container">
         <img className=" leaning-img" src={kevleaning} alt="" />
       </div>
-      <button className="booking-btn"> Book Kevin </button>
+      <button className="booking-btn" onClick={handleBook}>
+        Book Kevin
+      </button>{" "}
     </div>
   );
 };

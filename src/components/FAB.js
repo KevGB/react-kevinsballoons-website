@@ -1,12 +1,13 @@
 import './componentcss/fab.css'
+import { Link } from 'react-router-dom';
 
 const FAB = () => {
   return (
     <button type="button" class="fab">
-      <a href="book">
+      <Link to="/book">
         {" "}
         Book <span>Kevin</span> Now{" "}
-      </a>
+      </Link>
     </button>
   );
 };

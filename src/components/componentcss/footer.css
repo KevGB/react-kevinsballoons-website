@@ -14,6 +14,13 @@
     text-decoration: none;
 }
 
+li{
+    color: #03a5b6;
+}
+
+.link{
+    color: black;
+}
 
 
 .col{
@@ -21,3 +28,4 @@
     flex-direction: column;
     align-items: center;
 }
+

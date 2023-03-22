@@ -3,3 +3,9 @@
 .outline{
   border: 1px solid green;
 }
+
+.navigationvbar{
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+}

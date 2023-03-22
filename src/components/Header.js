@@ -8,13 +8,13 @@ const Header = (props) => {
   const navigate = useNavigate();
 
   const handleBook = () => {
-    navigate("/");
+    navigate("/book");
   };
 
   return (
       <div className=" header ">
         <div className="overlay">
-          <h1 className="start-headline">{headline}</h1>
+          <h1 className="headline">{headline}</h1>
           <p>{tagline}</p>
           <br/>
           <br/>

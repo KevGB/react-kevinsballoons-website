@@ -1,15 +1,16 @@
-
-
-img {
+.float-start {
   width: 100px;
+  margin-top: -13px;
+  border-radius: 50%;
+  background-color: #03a4b6;
 }
 
 .navbar {
-  background-color: #39b603;
+  background-color: #03a4b6;
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0px;
+  
+  z-index: 2000;
   display: flex;
   justify-content: center;
   width: 100%;
