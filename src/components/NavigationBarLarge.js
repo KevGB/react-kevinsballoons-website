@@ -7,31 +7,33 @@ import Logo from "../app/assets/img/BowtieLogo.png";
 
 const NavigationBarLarge = () => {
   return (
-    <div className="navbar" >
-      <NavItem>
-        <NavLink className="nav-link" to="/services">
-          Services
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink className="nav-link" to="/book">
-          Book
-        </NavLink>
-      </NavItem>
-      <NavbarBrand className="logo" href="/">
-        <img src={Logo} alt="Kevin's Balloons logo" className="float-start" />
-      </NavbarBrand>
+    <div className="navbar">
+      <div className="mx-auto navbar-links">
+        <NavItem>
+          <NavLink className="nav-link" to="/services">
+            Services
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink className="nav-link" to="/book">
+            Book
+          </NavLink>
+        </NavItem>
+        <NavbarBrand className="logo" href="/">
+          <img src={Logo} alt="Kevin's Balloons logo" className="float-start" />
+        </NavbarBrand>
 
-      <NavItem>
-        <NavLink className="nav-link" to="/gallery">
-          Gallery
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink className="nav-link" to="/contact">
-          Contact
-        </NavLink>
-      </NavItem>
+        <NavItem>
+          <NavLink className="nav-link" to="/gallery">
+            Gallery
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink className="nav-link" to="/contact">
+            Contact
+          </NavLink>
+        </NavItem>
+      </div>
     </div>
   );
 };

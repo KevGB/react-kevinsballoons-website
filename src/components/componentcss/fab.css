@@ -19,8 +19,8 @@
   text-shadow: 2px 1px #ffb200;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .fab {
     display: none;
   }
-}
+} */

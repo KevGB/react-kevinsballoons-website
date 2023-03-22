@@ -20,6 +20,17 @@
   font-weight: bold;
 }
 
+.navbar-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+}
+
+
+
+
 .nav-link:hover {
   color: #ffcf00;
 }
