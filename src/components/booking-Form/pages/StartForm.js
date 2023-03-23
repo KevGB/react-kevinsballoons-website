@@ -9,7 +9,7 @@ const StartForm = () => {
       <h3 className="subheader ">Let's book your event!</h3>
       <p className=" subsubheader">Just answer a few short questions</p>
       <Link className="nav-link" to="/bookingFormInfo">
-        <button className=" booking-btn" type="submit">
+        <button className="booking-btn" type="submit">
           Let's get this party started!
         </button>
       </Link>

@@ -54,28 +54,28 @@ const Footer = () => {
               <br />
               <div className="social-icons">
                 <a
-                  className="btn btn-social-icon btn-instagram"
+                  className="btn  btn-instagram"
                   href="http://instagram.com/kevins.balloons"
                 >
-                  <i className="fa fa-instagram" />
+                  <i className="fa fa-instagram fa-lg" />
                 </a>{" "}
                 <a
-                  className="btn btn-social-icon btn-facebook"
+                  className="btn btn-facebook"
                   href="http://www.facebook.com/"
                 >
-                  <i className="fa fa-facebook" />
+                  <i className="fa fa-facebook fa-lg" />
                 </a>{" "}
                 <a
-                  className="btn btn-social-icon btn-linkedin"
+                  className="btn btn-linkedin"
                   href="http://https://www.linkedin.com/in/kevin-bice-927385133/"
                 >
-                  <i className="fa fa-linkedin" />
+                  <i className="fa fa-lg fa-linkedin" />
                 </a>{" "}
                 <a
-                  className="btn btn-social-icon btn-google"
+                  className="btn btn-google"
                   href="http://youtube.com/"
                 >
-                  <i className="fa fa-youtube" />
+                  <i className="fa fa-lg fa-youtube" />
                 </a>
               </div>
             </div>

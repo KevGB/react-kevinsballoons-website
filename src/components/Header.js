@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import CyclicGallery from "./CyclicGallery";
-import './componentcss/header.css'
+import "./componentcss/header.css";
 
 const Header = (props) => {
   const { headline, tagline, display } = props;
@@ -12,27 +12,20 @@ const Header = (props) => {
   };
 
   return (
-      <div className=" header ">
-        <div className="overlay">
-          <h1 className="headline">{headline}</h1>
-          <p>{tagline}</p>
-          <br/>
-          <br/>
-          <div
-            className="  header-btn-container"
-            style={{ display:  display }}
-          >
-            
-            <button
-              className="booking-btn"
-              onClick={handleBook}
-            >
-              Book Kevin
-            </button>
-          </div>
+    <div className=" header ">
+      <div className="overlay">
+        <h1 className="headline">{headline}</h1>
+        <p>{tagline}</p>
+        <br />
+        <br />
+        <div className="  header-btn-container" style={{ display: display }}>
+          <button className="booking-btn" onClick={handleBook}>
+            Book Kevin
+          </button>
         </div>
-    <CyclicGallery  />
       </div>
+      <CyclicGallery />
+    </div>
   );
 };
 

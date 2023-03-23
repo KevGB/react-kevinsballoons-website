@@ -10,7 +10,7 @@ import ArchesPersonalInfo from "./pages/ArchesPersonalInfo";
 import ThankYouPage from "../../pages/ThankYouPage";
 import ArchesAdditionalInfo from "./pages/ArchesAdditionalInfo";
 
-function BookingForm() {
+function ArchesForm() {
   return (
     <div className="App">
         <Routes>
@@ -27,4 +27,4 @@ function BookingForm() {
   );
 }
 
-export default BookingForm;
+export default ArchesForm;

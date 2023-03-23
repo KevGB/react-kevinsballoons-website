@@ -1,0 +1,28 @@
+.page-content {
+  background-image: linear-gradient(
+    to right,
+    #03a5b6,
+    white,
+    white,
+    white,
+    white,
+    #03a5b6
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100px;
+  top: -70px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.service-description {
+    width: 100px
+}
