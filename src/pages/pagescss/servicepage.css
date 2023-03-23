@@ -1,0 +1,82 @@
+.service-row {
+  margin: 5px 2em;
+  padding: 0;
+}
+.service-row p {
+  color: white;
+}
+.service-row h6 {
+  font-size: 25px;
+}
+
+.service-img {
+  border-radius: 50%;
+  width: 100%;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.service-text {
+  max-width: 400px;
+}
+
+.ser-yel {
+  align-items: center;
+  justify-content: center;
+}
+.ser-yel h6 {
+  color: #ffcf00;
+}
+.ser-yel img {
+  border: 5px solid #ffcf00;
+}
+.ser-yel a {
+  color: #ffcf00;
+}
+.ser-yel a:hover {
+  color: #ffb200;
+}
+.ser-yel p {
+  color: black;
+}
+
+.ser-or {
+  align-items: center;
+  justify-content: center;
+}
+.ser-or h6 {
+  color: #ffb200;
+}
+.ser-or img {
+  border: 5px solid #ffb200;
+}
+.ser-or a {
+  color: #ffb200;
+}
+.ser-or p {
+  color: black;
+}
+.ser-or a:hover {
+  color: #ffcf00;
+}
+
+.ser-teal {
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+.ser-teal h6 {
+  color: #03a5b6;
+}
+.ser-teal img {
+  border: 5px solid #03a5b6;
+}
+.ser-teal a {
+  color: #03a5b6;
+}
+.ser-teal p {
+  color: black;
+}
+.ser-teal a:hover {
+  color: #04d3eaf4;
+}
