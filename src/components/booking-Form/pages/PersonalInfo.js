@@ -23,7 +23,7 @@ const PersonalInfo = () => {
 
   return (
     <div className="form">
-      <h1>Tell us about yourself</h1>
+      <h1 className="form-header" >Tell us about yourself</h1>
       <br />
       <p>Your contact info</p>
       <Formik

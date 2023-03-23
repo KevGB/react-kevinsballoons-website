@@ -51,9 +51,7 @@
   rotate: -6deg;
 }
 
-.headline h1{
-  font-family: modak;
-}
+
 
 .header-btn-container {
   display: flex;
@@ -64,7 +62,7 @@
 .booking-btn {
   box-shadow: 1px 1px 10px #004ea8b9;
   color: white;
-  text-shadow: 2px 1px 10px #004ea8b9;
+  text-shadow: 2px 1px 10px #004ea860;
   font-size: 25px;
   font-weight: bold;
   border: 2px solid #ffcf00;
@@ -73,4 +71,6 @@
   border-radius: 5px;
   font-family: alegreya;
 }
-
+.booking-btn:hover {
+  color: #ffcf00;
+}

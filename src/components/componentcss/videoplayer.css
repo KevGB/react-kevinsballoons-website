@@ -56,19 +56,8 @@ video {
   width: 40px;
 }
 
-.booking-btn {
-  box-shadow: 1px 1px 10px #004ea8b9;
-  color: white;
-  text-shadow: 2px 1px 10px #004ea8b9;
-  font-size: 25px;
-  font-weight: bold;
-  border: 2px solid #ffcf00;
-  width: 200%;
-  background-color: #04d3eaf4;
-}
-.booking-btn :hover {
-  color: #ffb200;
-}
+
+
 
 @media (max-width: 600px) {
   .leaning-img {

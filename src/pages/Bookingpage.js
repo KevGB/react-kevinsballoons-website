@@ -6,8 +6,8 @@ const Bookingpage = () => {
     <>
       <Header
         headline="Book Kevin"
-        tagline="World-famouse balloon twisting"
-        display="none"
+        tagline="World-famous balloon twisting"
+        display= "none"
       />
       <BookingForm />
     </>

@@ -26,7 +26,9 @@ const WhereForm = () => {
 
   return (
     <div className="form">
-      <h1>Tell us about your event</h1>
+      <h1 className="form-header">Tell us about your event</h1>
+      <br/>
+      <br/>
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -72,17 +74,10 @@ const WhereForm = () => {
                 className="form-control "
               />
             </div>
-            <div style={{ display: "flex", maxWidth: "300px" }}>
               <ErrorMessage name="city">
                 {(msg) => <p className="text-danger ">{msg}</p>}
               </ErrorMessage>
-              <ErrorMessage name="state">
-                {(msg) => <p className="text-danger ">{msg}</p>}
-              </ErrorMessage>
-              <ErrorMessage name="country">
-                {(msg) => <p className="text-danger ">{msg}</p>}
-              </ErrorMessage>
-            </div>
+             
             <br />
 
             <Label>What type of location is this?</Label>

@@ -22,7 +22,7 @@ const DurationForm = () => {
 
   return (
     <div className="form">
-      <h1>Tell us about your event</h1>
+      <h1 className="form-header">Tell us about your event</h1>
       <div>How long would you like Kevin to perform at your event?</div>
       <Formik
         initialValues={{ duration: "" }}

@@ -24,7 +24,7 @@ const GuestsForm = () => {
 
   return (
     <div className="form">
-      <h1>Tell us about you event</h1>
+      <h1 className="form-header">Tell us about your event</h1>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         {(formikProps) => (
           <Form className="KB-form">

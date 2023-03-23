@@ -28,7 +28,7 @@ const AdditionalInfo = () => {
 
   return (
     <div className="form">
-      <h1>Additional Notes</h1>
+      <h1 className="form-header">Additional Notes</h1>
       <br />
       <Formik
         initialValues={initialValues}

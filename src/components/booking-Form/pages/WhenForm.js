@@ -28,7 +28,7 @@ const WhenForm = () => {
 
   return (
     <div className="form">
-      <h1>Tell us about your event</h1>
+      <h1 className="form-header">Tell us about your event</h1>
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}

@@ -20,7 +20,7 @@ const Header = (props) => {
           <br/>
           <div
             className="  header-btn-container"
-            style={{ display: { display } }}
+            style={{ display:  display }}
           >
             
             <button
