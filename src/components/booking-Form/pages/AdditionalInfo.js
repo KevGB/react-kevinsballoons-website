@@ -27,79 +27,85 @@ const AdditionalInfo = () => {
   };
 
   return (
-    <div className="form">
-      <h1 className="form-header">Additional Notes</h1>
-      <br />
-      <Formik
-        initialValues={initialValues}
-        validate={validateAdditionalForm}
-        onSubmit={handleSubmit}
-      >
-        <Form className="KB-form">
-          <FormGroup md="12">
-            <Field
-              as="textarea"
-              name="referal"
-              className="form-control field"
-              placeholder="How'd you hear about us?"
-            />
-          </FormGroup>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className="form">
+        <h1 className="form-header">Additional Notes</h1>
+        <br />
+        <Formik
+          initialValues={initialValues}
+          validate={validateAdditionalForm}
+          onSubmit={handleSubmit}
+        >
+          <Form className="KB-form">
+            <FormGroup md="12">
+              <Field
+                as="textarea"
+                name="referal"
+                className="form-control field"
+                placeholder="How'd you hear about us?"
+              />
+            </FormGroup>
 
-          <br />
+            <br />
 
-          <FormGroup md="12">
-            <Field
-              as="textarea"
-              name="notes"
-              className="form-control field"
-              placeholder="Any additional note about your event"
-            />
-          </FormGroup>
+            <FormGroup md="12">
+              <Field
+                as="textarea"
+                name="notes"
+                className="form-control field"
+                placeholder="Any additional note about your event"
+              />
+            </FormGroup>
 
-          <br />
+            <br />
 
-          <FormGroup md="12">
-            <Field name="tandc" type="checkbox" className="form-check-input" />{" "}
-            <Label check htmlFor="tandc">
-              I agree to Kevin's Balloons{" "}
-              <a href="#0" onClick={handleClick}>
-                T&C
-              </a>
-            </Label>
-            {tandcShow && <TandC />}
-            <ErrorMessage name="tandc">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
-          </FormGroup>
+            <FormGroup md="12">
+              <Field
+                name="tandc"
+                type="checkbox"
+                className="form-check-input"
+              />{" "}
+              <Label check htmlFor="tandc">
+                I agree to Kevin's Balloons{" "}
+                <a href="#0" onClick={handleClick}>
+                  T&C
+                </a>
+              </Label>
+              {tandcShow && <TandC />}
+              <ErrorMessage name="tandc">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
+            </FormGroup>
 
-          <Button type="submit" color="info">
-            Submit
-          </Button>
-        </Form>
-      </Formik>
+            <Button type="submit" color="info">
+              Submit
+            </Button>
+          </Form>
+        </Formik>
 
-      <div className="form-navigation">
-        <Link to="/bookingFormStart">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormInfo">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormDuration">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormWhen">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormWhere">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormGuests">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormAdditional">
-          <i className="fa fa-solid fa-circle form-navigation-active" />
-        </Link>
+        <div className="form-navigation">
+          <Link to="/bookingFormStart">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormInfo">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormDuration">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormWhen">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormWhere">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormGuests">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormAdditional">
+            <i className="fa fa-solid fa-circle form-navigation-active" />
+          </Link>
+        </div>
       </div>
     </div>
   );

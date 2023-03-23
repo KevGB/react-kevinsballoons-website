@@ -22,6 +22,8 @@ const PersonalInfo = () => {
   };
 
   return (
+    <div style={{display:"flex", justifyContent: 'center'}}> 
+
     <div className="form">
       <h1 className="form-header" >Tell us about yourself</h1>
       <br />
@@ -113,6 +115,7 @@ const PersonalInfo = () => {
 
         <i className="fa fa-solid fa-circle not-yet" />
       </div>
+    </div>
     </div>
   );
 };

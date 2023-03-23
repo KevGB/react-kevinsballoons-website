@@ -21,6 +21,7 @@ const Contactpage = () => {
        tagline="for quick questions"
        display="none"
       />
+      
       <div className="container-fluid yellow">
         <div className="row justify-content-center contact-row mx-lg-auto">
           <Col sm="4" className="contact-box">

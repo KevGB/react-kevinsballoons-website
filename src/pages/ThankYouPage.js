@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import thankyou from "../app/assets/img/Thankyou.jpg";
-import './pagescss/thankyou.css'
+import "./pagescss/thankyou.css";
 
 const ThankYouPage = () => {
   return (
@@ -10,16 +10,15 @@ const ThankYouPage = () => {
         tagline={"San Francisco's Globally-Demanded Balloon Artist"}
         display={true}
       />
-      <br />
-      <div className="thankyou-image-container">
-        <img
-          src={thankyou}
-          style={{ width: "100%", maxWidth: "800px" }}
-          alt="thank you message from Kevin's Balloons"
-        />
+      <div className="page-content">
+        <div className="thankyou-image-container">
+          <img
+            src={thankyou}
+            style={{ width: "100%", maxWidth: "800px" }}
+            alt="thank you message from Kevin's Balloons"
+          />
+        </div>
       </div>
-      <br />
-      <br />
     </>
   );
 };
