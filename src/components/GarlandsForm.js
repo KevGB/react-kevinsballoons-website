@@ -5,6 +5,7 @@ import ColorPickerForm from "../utils/ColorPicker";
 
 const initialValues = {
   numGarlands: 1,
+  fileGarland: null,
   numColors: "",
   garlandSize: "",
   deliveryDate: "",
@@ -59,6 +60,19 @@ const GarlandsForm = () => {
                     <option value="6">6</option>
                   </Input>
                 </div>
+              </FormGroup>
+              <FormGroup row className="mt-2">
+                <Label for="fileGarland" className="col-form-label">
+                  Upload an image from the internet similar to what you want 
+                </Label>
+                <Row className="mt-n4">
+                  <Field
+                    type="file"
+                    value={values.fileGarland}
+                    className="form-control col-12"
+                    id="fileGarland"
+                  />
+                </Row>
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="numColors" className="col-form-label ">

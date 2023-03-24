@@ -5,6 +5,7 @@ import ColorPickerForm from "../utils/ColorPicker";
 
 const initialValues = {
   numArches: 1,
+  fileArch: null,
   numColors: "",
   archSize: "",
   deliveryDate: "",
@@ -59,6 +60,19 @@ const ArchForm = () => {
                     <option value="6">6</option>
                   </Input>
                 </div>
+              </FormGroup>
+              <FormGroup row className="mt-2">
+                <Label for="fileArch" className="col-form-label">
+                  Upload an image from the internet similar to what you want 
+                </Label>
+                <Row className="mt-n4">
+                  <Field
+                    type="file"
+                    value={values.fileArch}
+                    className="form-control col-12"
+                    id="fileArch"
+                  />
+                </Row>
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="numColors" className="col-form-label ">

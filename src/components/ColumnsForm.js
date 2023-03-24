@@ -5,6 +5,7 @@ import ColorPickerForm from "../utils/ColorPicker";
 
 const initialValues = {
   numColumns: 1,
+  fileColumn: null,
   numColors: "",
   columnSize: "",
   deliveryDate: "",
@@ -59,6 +60,19 @@ const ColumnsForm = () => {
                     <option value="6">6</option>
                   </Input>
                 </div>
+              </FormGroup>
+              <FormGroup row className="mt-2">
+                <Label for="fileColumn" className="col-form-label">
+                  Upload an image from the internet similar to what you want 
+                </Label>
+                <Row className="mt-n4">
+                  <Field
+                    type="file"
+                    value={values.fileColumn}
+                    className="form-control col-12"
+                    id="fileColumn"
+                  />
+                </Row>
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="numColors" className="col-form-label ">
