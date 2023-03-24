@@ -4,29 +4,29 @@ import "../components/booking-Form/bookingform.css";
 import ColorPickerForm from "../utils/ColorPicker";
 
 const initialValues = {
-  numArches: 1,
+  numColumns: 1,
   numColors: "",
-  archSize: "",
+  columnSize: "",
   deliveryDate: "",
   deliveryTime: "",
   deliveryAddress: "",
   deliveryCity: "",
   deliveryState: "",
   deliveryCountry: "",
-  occasionArch: "",
-  occaOtherArch: "",
-  archSetting: "",
-  setOtherArch: "",
-  parkingArch: "",
+  occasionColumn: "",
+  occaOtherColumn: "",
+  columnSetting: "",
+  setOtherColumn: "",
+  parkingColumn: "",
   firstName: "",
   lastName: "",
   email: "",
   phoneNumber: "",
   referal: "",
-  additionalNotesArch: "",
+  additionalNotesColumn: "",
 };
 
-const ArchForm = () => {
+const ColumnsForm = () => {
   const onSubmit = (values) => {
     console.log(values);
   };
@@ -37,18 +37,18 @@ const ArchForm = () => {
         {({ values }) => (
           <Form className="form">
             <div className="col-sm-6 ">
-              <h1 className="form-header">Tell me about your Arch</h1>
+              <h1 className="form-header">Tell me about your Columns</h1>
               <br/>
               <FormGroup row className="mt-2">
-                <Label for="numArches" className="col-form-label">
-                  How many Arches do you need?
+                <Label for="numColumns" className="col-form-label">
+                  How many Columns do you need?
                 </Label>
                 <div className="row mt-n4">
                   <Input
                     type="select"
                     className="form-control"
-                    id="numArches"
-                    name="numArches"
+                    id="numColumns"
+                    name="numColumns"
                   >
                     <option value=""></option>
                     <option value="1">1</option>
@@ -67,46 +67,45 @@ const ArchForm = () => {
                 <Field component={ColorPickerForm} />
               </FormGroup>
               <FormGroup row className="mt-2">
-                <Label for="archSize" className="col-form-label">
+                <Label for="columnSize" className="col-form-label">
                   What Size Would You Like?
                 </Label>
                 <div className="row mt-n4">
                   <Input
                     type="select"
-                    name="archSize"
-                    id="archSize"
+                    name="columnSize"
+                    id="columnSize"
                     className="form-control"
                   >
                     <option value=""></option>
-                    <option value="10">12ft Balloon Arch</option>
-                    <option value="20">20ft Balloon Arch</option>
-                    <option value="30">30ft Balloon Arch</option>
-                    <option value="40">40ft Balloon Arch</option>
+                    <option value="10">3ft Balloon Column</option>
+                    <option value="20">5ft Balloon Column</option>
+                    <option value="30">7ft Balloon Column</option>
+                    <option value="40">9ft Balloon Column</option>
                   </Input>
                 </div>
               </FormGroup>
               <FormGroup row className="mt-2">
-                <Label for="archSize" className="col-form-label">
+                <Label for="columnSize" className="col-form-label">
                   What Style Would You Like?
                 </Label>
                 <div className="row mt-n4">
                   <Input
                     type="select"
-                    name="archStyle"
-                    id="archStyle"
+                    name="columnStyle"
+                    id="columnStyle"
                     className="form-control"
                   >
                     <option value=""></option>
                     <option value="quad">Quad</option>
                     <option value="organic">Organic</option>
-                    <option value="helium">Helium</option>
                   </Input>
                 </div>
               </FormGroup>
 
               <FormGroup row className="mt-2">
-                <Label for="archStyle" className="col-form-label">
-                  Would you like it decorated with Kevin's world-famous Balloon Art?
+                <Label for="columnStyle" className="col-form-label">
+                  Would you like them decorated with Kevin's world-famous Balloon Art?
                 </Label>
                 <div style={{display: 'flex', justifyContent: "space-between"}}>
                   <Label  >
@@ -115,7 +114,7 @@ const ArchForm = () => {
                   </Label>
                   <Label>
                     <Field type="radio" name="decorated" value="no" />{' '}
-                    No, just a plain arch, please
+                    No, just a plain Column, please
                   </Label>
                 </div >
               </FormGroup>
@@ -217,10 +216,10 @@ const ArchForm = () => {
                 </Col>
               </Row>
               <FormGroup row className="mt-2">
-                <Label for="occasionArch" className="col-form-label">
+                <Label for="occasionColumn" className="col-form-label">
                   What's the Occasion?
                 </Label>
-                <Input type="select" name="occasionArch" id="occasionArch">
+                <Input type="select" name="occasionColumn" id="occasionColumn">
                   <option value=""></option>
                   <option value="birthday">Birthday Party</option>
                   <option value="corporate">Corporate Event</option>
@@ -235,16 +234,16 @@ const ArchForm = () => {
                 </Input>
                 <Input
                   type="text"
-                  name="occaOtherArch"
-                  id="occaOtherArch"
+                  name="occaOtherColumn"
+                  id="occaOtherColumn"
                   placeholder="Other"
                   className="mt-2"
                 />
               </FormGroup>
 
               <FormGroup row className="mt-2">
-                <Label for="archSetting">What's the Setting?</Label>
-                <Input type="select" name="archSetting" id="archSetting">
+                <Label for="columnSetting">What's the Setting?</Label>
+                <Input type="select" name="columnSetting" id="columnSetting">
                   <option value=""></option>
                   <option value="house">House</option>
                   <option value="apartment">Apartment</option>
@@ -258,23 +257,23 @@ const ArchForm = () => {
                 </Input>
                 <Input
                   type="text"
-                  name="setOtherArch"
-                  id="setOtherArch"
+                  name="setOtherColumn"
+                  id="setOtherColumn"
                   placeholder="Other"
                   className="mt-2 "
                 />
               </FormGroup>
 
               <FormGroup className="row mt-2">
-                <Label htmlFor="parkingArch" className="col-form-label">
+                <Label htmlFor="parkingColumn" className="col-form-label">
                   Parking Info
                 </Label>
 
                 <Field
                   as={Input}
                   type="textarea"
-                  name="parkingArch"
-                  id="parkingArch"
+                  name="parkingColumn"
+                  id="parkingColumn"
                   rows="2"
                 />
               </FormGroup>
@@ -348,21 +347,21 @@ const ArchForm = () => {
                 />
               </FormGroup>
               <FormGroup className="row mt-4">
-                <Label htmlFor="additionalNotesArch" className="col-form-label">
+                <Label htmlFor="additionalNotesColumn" className="col-form-label">
                   Additional Notes
                 </Label>
 
                 <Field
                   component={Input}
                   type="textarea"
-                  name="additionalNotesArch"
+                  name="additionalNotesColumn"
                   id="additionalNotes"
                   className="form-control"
                   rows="4"
                 />
               </FormGroup>
             </div>
-            <Button type="submit" id="archFormSubmit" color="info">
+            <Button type="submit" id="ColumnFormSubmit" color="info">
               Get a Quote
             </Button>
           </Form>
@@ -372,4 +371,4 @@ const ArchForm = () => {
   );
 };
 
-export default ArchForm;
+export default ColumnsForm;

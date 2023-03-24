@@ -15,7 +15,7 @@ const Servicepage = () => {
         <Container style={{ width: "800px" }}>
           <Row className="service-row ser-yel">
             <Col xs="4" className="p-0  d-flex">
-              <Link to='arches'>
+              <Link to='/arches'>
                 <img src={archimg} alt="" className="service-img" />
               </Link>
             </Col>
@@ -25,7 +25,7 @@ const Servicepage = () => {
               <p className="d-none d-sm-block">
                 A balloon arch adds a fun, playful element to any event and is a
                 great way to make a statement and create a memorable photo
-                backdrop. <Link to="arches">learn more</Link>
+                backdrop. <Link to="/arches">learn more</Link>
               </p>
             </Col>
           </Row>
@@ -43,11 +43,11 @@ const Servicepage = () => {
                 texture to your party decor. It's versatile, customizable, and
                 perfect for creating a photo-worthy backdrop or highlighting key
                 areas of your event space.{" "}
-                <Link to='garlands'>learn more</Link>
+                <Link to='/garlands'>learn more</Link>
               </p>
             </Col>
             <Col xs="4" className="p-0 justify-content-center d-flex">
-              <Link to='garlands'>
+              <Link to='/garlands'>
                 <img src={garlandimg} alt="" className="service-img" />
               </Link>
             </Col>
@@ -55,7 +55,7 @@ const Servicepage = () => {
 
           <Row className="service-row ser-or">
             <Col xs="4" className="p-0 d-flex">
-              <Link to='columns'>
+              <Link to='/columns'>
                 <img src={columnimg} alt="" className="service-img" />
               </Link>
             </Col>
@@ -66,7 +66,7 @@ const Servicepage = () => {
                 Balloon columns are a must-have at any event as they add a touch
                 of whimsy and create an inviting atmosphere. They're versatile,
                 customizable, and perfect for adding visual interest and depth
-                to your party decor. <Link to='columns'>learn more</Link>
+                to your party decor. <Link to='/columns'>learn more</Link>
               </p>
             </Col>
           </Row>
@@ -88,7 +88,7 @@ const Servicepage = () => {
               </p>
             </Col>
             <Col xs="4" className="p-0 justify-content-center d-flex">
-              <Link to="centerpieces">
+              <Link to="/centerpieces">
                 <img src={bikeimg} alt="" className="service-img" />
               </Link>
             </Col>
