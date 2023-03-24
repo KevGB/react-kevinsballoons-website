@@ -4,7 +4,7 @@ import "./pagescss/bookingpage.css";
 import { Card, CardBody, CardImg } from "reactstrap";
 import butterflyimage from "../app/assets/img/column-butterfly-sq.jpg";
 import fatboyimage from "../app/assets/img/cluster-1-sq.jpg";
-import mermiadimage from "../app/assets/img/theme-mermaid-sq.jpg";
+import mermaidimage from "../app/assets/img/theme-mermaid-sq.jpg";
 
 const InfoCard = () => {
   return (
@@ -38,7 +38,7 @@ const InfoCard = () => {
       <CardBody>
         Many people like to top their columns with mylar or extra large balloons
       </CardBody>
-      <CardImg src={mermiadimage} />
+      <CardImg src={mermaidimage} />
       <CardBody>
         This mermaid tail is not technically a column, its a garland. Columns can stand alone, but the mermaid tail requires a wall.
       </CardBody>

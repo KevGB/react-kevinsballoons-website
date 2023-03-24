@@ -84,7 +84,7 @@ const Servicepage = () => {
                 decoration that guests will love. Plus, it can be customized to
                 fit any theme or color scheme, making it a versatile addition to
                 any celebration.{' '}
-                <Link to="centerpieces">learn more</Link>
+                <Link to="/centerpieces">learn more</Link>
               </p>
             </Col>
             <Col xs="4" className="p-0 justify-content-center d-flex">

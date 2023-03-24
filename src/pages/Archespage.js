@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import ArchesForm from "../components/ArchesForm";
 import "./pagescss/bookingpage.css";
-import { Card, CardBody, CardHeader, CardImg } from "reactstrap";
+import { Card, CardBody, CardImg } from "reactstrap";
 import archimage from "../app/assets/img/archpinkblue-sq.jpg"
 import garlandimage from "../app/assets/img/garland-pink-engagement-sq.jpg"
 import duckimage from "../app/assets/img/twisting-duck.jpg"
