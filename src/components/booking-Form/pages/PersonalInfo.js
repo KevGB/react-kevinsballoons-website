@@ -22,100 +22,100 @@ const PersonalInfo = () => {
   };
 
   return (
-    <div style={{display:"flex", justifyContent: 'center'}}> 
-
-    <div className="form">
-      <h1 className="form-header" >Tell us about yourself</h1>
-      <br />
-      <p>Your contact info</p>
-      <Formik
-        initialValues={initialValues}
-        validate={validateForm}
-        onSubmit={handleSubmit}
-      >
-        <Form className="KB-form">
-          <FormGroup md="12">
-            <Field
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              className="form-control field"
-            />
-            <ErrorMessage name="firstName">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
-          </FormGroup>
-
-          <FormGroup md="12">
-            <Field
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              className="form-control field"
-            />
-
-            <ErrorMessage name="lastName">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
-          </FormGroup>
-
-          <FormGroup md="12">
-            <Field
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="form-control field"
-            />
-            <ErrorMessage name="email">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
-          </FormGroup>
-
-          <FormGroup md="12">
-            <Field
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              className="form-control field"
-            />
-            <ErrorMessage name="phone">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
-          </FormGroup>
-
-          <FormGroup md="12">
-            <Label className="small-text">
-              If you prefer Instagram messaging, add your handle here (optional)
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className="form">
+        <h1 className="form-header">Tell us about yourself</h1>
+        <br />
+        <p>Your contact info</p>
+        <Formik
+          initialValues={initialValues}
+          validate={validateForm}
+          onSubmit={handleSubmit}
+        >
+          <Form className="KB-form">
+            <FormGroup md="12">
               <Field
                 type="text"
-                name="instagram"
-                placeholder="Instagram"
+                name="firstName"
+                placeholder="First Name"
                 className="form-control field"
               />
-            </Label>
-          </FormGroup>
+              <ErrorMessage name="firstName">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
+            </FormGroup>
 
-          <Button type="submit" color="info">
-            Next
-          </Button>
-        </Form>
-      </Formik>
+            <FormGroup md="12">
+              <Field
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                className="form-control field"
+              />
 
-      <div className="form-navigation">
-        <Link to="/bookingFormStart">
-          <i className="fa fa-solid fa-circle" />
-        </Link>
-        <Link to="/bookingFormInfo">
-          <i className="fa fa-solid fa-circle form-navigation-active" />,
-        </Link>
-        <i className="fa fa-solid fa-circle not-yet" />
-        <i className="fa fa-solid fa-circle not-yet" />
-        <i className="fa fa-solid fa-circle not-yet" />
-        <i className="fa fa-solid fa-circle not-yet" />
+              <ErrorMessage name="lastName">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
+            </FormGroup>
 
-        <i className="fa fa-solid fa-circle not-yet" />
+            <FormGroup md="12">
+              <Field
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="form-control field"
+              />
+              <ErrorMessage name="email">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
+            </FormGroup>
+
+            <FormGroup md="12">
+              <Field
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                className="form-control field"
+              />
+              <ErrorMessage name="phone">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
+            </FormGroup>
+
+            <FormGroup md="12">
+              <Label className="small-text">
+                If you prefer Instagram messaging, add your handle here
+                (optional)
+                <Field
+                  type="text"
+                  name="instagram"
+                  placeholder="Instagram"
+                  className="form-control field"
+                />
+              </Label>
+            </FormGroup>
+
+            <Button type="submit" color="info">
+              Next
+            </Button>
+          </Form>
+        </Formik>
+
+        <div className="form-navigation">
+          <Link to="/bookingFormStart">
+            <i className="fa fa-solid fa-circle" />
+          </Link>
+          <Link to="/bookingFormInfo">
+            <i className="fa fa-solid fa-circle form-navigation-active" />,
+          </Link>
+          <i className="fa fa-solid fa-circle not-yet" />
+          <i className="fa fa-solid fa-circle not-yet" />
+          <i className="fa fa-solid fa-circle not-yet" />
+          <i className="fa fa-solid fa-circle not-yet" />
+
+          <i className="fa fa-solid fa-circle not-yet" />
+        </div>
       </div>
-    </div>
     </div>
   );
 };
