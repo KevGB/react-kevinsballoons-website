@@ -6,8 +6,6 @@ const Gallerypage = () => {
       <h1 className="form-headline">Lookit all the shit I can make!</h1>
       <ScrollingGallery />
       <ScrollingGallery />
-      
-     
     </div>
   );
 };

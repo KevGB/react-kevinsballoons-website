@@ -13,16 +13,16 @@ import AdditionalInfo from "./pages/AdditionalInfo";
 function BookingForm() {
   return (
     <div className="App">
-        <Routes>
-          <Route path="/" element={<StartForm />} />
-          <Route path="bookingFormInfo" element={<PersonalInfo />} />
-          <Route path="bookingFormDuration" element={<DurationForm />} />
-          <Route path="bookingFormWhen" element={<WhenForm />} />
-          <Route path="bookingFormWhere" element={<WhereForm />} />
-          <Route path="bookingFormGuests" element={<GuestsForm />} />
-          <Route path="bookingFormAdditional" element={<AdditionalInfo />} />
-          <Route path="thankyou" element={<ThankYouPage />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<StartForm />} />
+        <Route path="bookingFormInfo" element={<PersonalInfo />} />
+        <Route path="bookingFormDuration" element={<DurationForm />} />
+        <Route path="bookingFormWhen" element={<WhenForm />} />
+        <Route path="bookingFormWhere" element={<WhereForm />} />
+        <Route path="bookingFormGuests" element={<GuestsForm />} />
+        <Route path="bookingFormAdditional" element={<AdditionalInfo />} />
+        <Route path="thankyou" element={<ThankYouPage />} />
+      </Routes>
     </div>
   );
 }

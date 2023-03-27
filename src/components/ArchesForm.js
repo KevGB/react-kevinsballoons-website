@@ -33,13 +33,13 @@ const ArchForm = () => {
   };
 
   return (
-    <div style={{paddingBottom: 30}}>
-      <Formik initialValues={initialValues} onSumbit={onSubmit} >
+    <div style={{ paddingBottom: 30 }}>
+      <Formik initialValues={initialValues} onSumbit={onSubmit}>
         {({ values }) => (
           <Form className="form">
             <div className="col-sm-6 ">
               <h1 className="form-header">Tell me about your Arch</h1>
-              <br/>
+              <br />
               <FormGroup row className="mt-2">
                 <Label for="numArches" className="col-form-label">
                   How many Arches do you need?
@@ -63,7 +63,7 @@ const ArchForm = () => {
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="fileArch" className="col-form-label">
-                  Upload an image from the internet similar to what you want 
+                  Upload an image from the internet similar to what you want
                 </Label>
                 <Row className="mt-n4">
                   <Field
@@ -120,18 +120,21 @@ const ArchForm = () => {
 
               <FormGroup row className="mt-2">
                 <Label for="archStyle" className="col-form-label">
-                  Would you like it decorated with Kevin's world-famous Balloon Art?
+                  Would you like it decorated with Kevin's world-famous Balloon
+                  Art?
                 </Label>
-                <div style={{display: 'flex', justifyContent: "space-between"}}>
-                  <Label  >
-                    <Field type="radio" name="decorated" value="yes" />{' '}
-                    Yes, please!
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <Label>
+                    <Field type="radio" name="decorated" value="yes" /> Yes,
+                    please!
                   </Label>
                   <Label>
-                    <Field type="radio" name="decorated" value="no" />{' '}
-                    No, just a plain arch, please
+                    <Field type="radio" name="decorated" value="no" /> No, just
+                    a plain arch, please
                   </Label>
-                </div >
+                </div>
               </FormGroup>
 
               <Row className="mt-2">

@@ -2,9 +2,9 @@ import Header from "../components/Header";
 import ArchesForm from "../components/ArchesForm";
 import "./pagescss/bookingpage.css";
 import { Card, CardBody, CardImg } from "reactstrap";
-import archimage from "../app/assets/img/archpinkblue-sq.jpg"
-import garlandimage from "../app/assets/img/garland-pink-engagement-sq.jpg"
-import duckimage from "../app/assets/img/twisting-duck.jpg"
+import archimage from "../app/assets/img/archpinkblue-sq.jpg";
+import garlandimage from "../app/assets/img/garland-pink-engagement-sq.jpg";
+import duckimage from "../app/assets/img/twisting-duck.jpg";
 
 const InfoCard = () => {
   return (
@@ -12,7 +12,6 @@ const InfoCard = () => {
       class="service-card outline d-none d-sm-block"
       style={{ width: "20rem", padding: 0 }}
     >
-      
       <CardBody>
         <p className="service-description ">
           A balloon arch is a fun and versatile addition to any event! They can
@@ -27,12 +26,18 @@ const InfoCard = () => {
           stand out.
         </p>
       </CardBody>
-      <CardImg src={archimage}/>
+      <CardImg src={archimage} />
       <CardBody>Organic Style Arch</CardBody>
-      <CardImg src={duckimage}/>
-      <CardBody>If you want Kevin to include some of his world-famous balloon art into your arch, just click Yes, please!</CardBody>
-      <CardImg src={garlandimage}/>
-      <CardBody>This is not an arch, this is called a garland. Garlands are not full arches, but they're increasingly popular for events</CardBody>
+      <CardImg src={duckimage} />
+      <CardBody>
+        If you want Kevin to include some of his world-famous balloon art into
+        your arch, just click Yes, please!
+      </CardBody>
+      <CardImg src={garlandimage} />
+      <CardBody>
+        This is not an arch, this is called a garland. Garlands are not full
+        arches, but they're increasingly popular for events
+      </CardBody>
     </Card>
   );
 };
