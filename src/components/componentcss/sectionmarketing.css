@@ -26,5 +26,7 @@
   align-items: center;
   padding: 10px;
   padding-top: 0px;
+  max-width: 800px;
+  text-align: left;
 }
 

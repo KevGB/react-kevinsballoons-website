@@ -11,6 +11,8 @@ const InfoCard = () => {
     <Card
       class="service-card  d-none d-sm-block"
       style={{ width: "20rem", padding: 0 }}
+      className="d-none d-sm-block"
+
     >
       <CardBody>
         <p className="service-description ">

@@ -3,7 +3,7 @@ import "./pagescss/servicepage.css";
 import Header from "../components/Header";
 import archimg from "../app/assets/img/archpinkblue-sq.jpg";
 import garlandimg from "../app/assets/img/garland-pink-engagement-sq.jpg";
-import columnimg from "../app/assets/img/column-butterfly-sq.jpg";
+import columnimg from "../app/assets/img/columns50.jpg";
 import bikeimg from "../app/assets/img/kev-bike-sq.png";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const Servicepage = () => {
               </p>
             </Col>
           </Row>
-
+<hr></hr>
           <Row className="service-row ser-teal">
             <Col xs="8" className="service-text">
               <h6>Garlands</h6>
@@ -52,7 +52,7 @@ const Servicepage = () => {
               </Link>
             </Col>
           </Row>
-
+          <hr></hr>
           <Row className="service-row ser-or">
             <Col xs="4" className="p-0 d-flex">
               <Link to='/columns'>
@@ -70,7 +70,7 @@ const Servicepage = () => {
               </p>
             </Col>
           </Row>
-
+          <hr></hr>
           <Row className="service-row ser-teal">
             <Col xs="8" className="service-text">
               <h6>Custom Centerpieces</h6>

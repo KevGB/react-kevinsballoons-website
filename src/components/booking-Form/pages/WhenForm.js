@@ -30,6 +30,7 @@ const WhenForm = () => {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div className="form">
         <h1 className="form-header">Tell us about your event</h1>
+        <br/>
         <Formik
           initialValues={initialValues}
           onSubmit={handleSubmit}

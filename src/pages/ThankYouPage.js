@@ -8,7 +8,7 @@ const ThankYouPage = () => {
       <Header
         headline={"Thank you for Booking!"}
         tagline={"San Francisco's Globally-Demanded Balloon Artist"}
-        display={true}
+        display='none'
       />
       <div className="page-content">
         <div className="thankyou-image-container">

@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import SectionMarketing from "../components/SectionMarketing";
 import ScrollingGallery from "../components/ScrollingGallery";
-import SubscribeForm from "../components/SubscribeForm";
+// import SubscribeForm from "../components/SubscribeForm";
 import ScrollingLogos from "../components/ScrollingLogos";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import FAB from "../components/FAB";
@@ -23,7 +23,7 @@ const Homepage = () => {
         <ScrollingLogos  />
         <TestimonialCarousel className="testimonialcarousel " />
       </div>
-      <SubscribeForm />
+      {/* <SubscribeForm /> */}
     </div>
   );
 };

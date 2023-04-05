@@ -14,10 +14,9 @@ const SectionMarketing = () => {
             craft.
           </p>
           <p class="">
-            In 2022 alone, Kevin has twisted balloons as far away as
-            Croatia, South Africa, Mexico, Botswana, and even at 30,000 ft in the air! His
-            unique and modern designs have wowed audiences all around the world,
-            making him one of the top balloon artists in the industry.
+          His
+            unique and modern designs have wowed audiences all around the world. In 2022 alone, Kevin twisted balloons as far away as
+            Croatia, South Africa, Mexico, Botswana, and even at 30,000 ft in the air! 
           </p>
           <p class="">
             So why settle for anything less than the best? Let Kevin bring his

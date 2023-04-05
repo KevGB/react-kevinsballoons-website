@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 import Header from "../components/Header";
 import "./pagescss/contactpage.css"
+import { Link } from "react-router-dom";
 
 const Contactpage = () => {
   return (
@@ -23,7 +24,7 @@ const Contactpage = () => {
       />
       
       <div className="container-fluid yellow">
-        <div className="row justify-content-center contact-row mx-lg-auto">
+        <div className="row justify-content-center contact-row mx-auto">
           <Col sm="4" className="contact-box">
             <a href="mailto:kevinsballoons@gmail.com">
               <i className="fa fa-envelope mb-2" size={60} />
@@ -41,15 +42,15 @@ const Contactpage = () => {
           </Col>
 
           <Col sm="4" className="contact-box">
-            <a href="book.html">
+            <Link to="/book">
               <i className="fa fa-mobile mb-2" size={60} />
               <h2>Book Kevin</h2>
               <h6>for your event!</h6>
-            </a>
+            </Link>
           </Col>
         </div>
 
-        <Container className="contact-form">
+        {/* <Container className="contact-form">
           <h2>Just have a quick question?</h2>
           <Formik
             initialValues={{
@@ -123,7 +124,7 @@ const Contactpage = () => {
               </Form>
             )}
           </Formik>
-        </Container>
+        </Container> */}
       </div>
     </>
   );

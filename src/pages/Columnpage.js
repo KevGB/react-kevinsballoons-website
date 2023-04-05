@@ -3,14 +3,16 @@ import ColumnsForm from "../components/ColumnsForm";
 import "./pagescss/bookingpage.css";
 import { Card, CardBody, CardImg } from "reactstrap";
 import butterflyimage from "../app/assets/img/column-butterfly-sq.jpg";
-import fatboyimage from "../app/assets/img/cluster-1-sq.jpg";
+import columns50 from "../app/assets/img/columns50.jpg";
 import mermaidimage from "../app/assets/img/theme-mermaid-sq.jpg";
+
 
 const InfoCard = () => {
   return (
     <Card
       class="service-card  d-none d-sm-block"
       style={{ width: "20rem", padding: 0 }}
+      className="d-none d-sm-block"
     >
       <CardBody>
         <p className="service-description ">
@@ -32,7 +34,7 @@ const InfoCard = () => {
           party and see the magic for yourself?
         </p>
       </CardBody>
-      <CardImg src={fatboyimage} />
+      <CardImg src={columns50} />
       <CardBody>
         Arches can be short or tall, but they always stand alone
       </CardBody>
@@ -43,7 +45,7 @@ const InfoCard = () => {
       <CardImg src={mermaidimage} />
       <CardBody>
         This mermaid tail is not technically a column, its a garland. Columns
-        can stand alone, but the mermaid tail requires a wall.
+        can stand alone, but this tail requires a wall for support.
       </CardBody>
     </Card>
   );
