@@ -1,7 +1,7 @@
 import React from "react";
 import "./componentcss/navigationbar.css";
 import { NavbarBrand, NavItem } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import Logo from "../app/assets/img/BowtieLogo.png";
 
@@ -10,28 +10,28 @@ const NavigationBarLarge = () => {
     <div className="navbar">
       <div className="mx-auto navbar-links">
         <NavItem>
-          <NavLink className="nav-link" to="/services">
+          <Link className="nav-link" to="/services">
             Services
-          </NavLink>
+          </Link>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/book">
+          <Link className="nav-link" to="/book">
             Book
-          </NavLink>
+          </Link>
         </NavItem>
         <NavbarBrand className="logo" href="/">
           <img src={Logo} alt="Kevin's Balloons logo" className="float-start" />
         </NavbarBrand>
 
         <NavItem>
-          <NavLink className="nav-link" to="/gallery">
+          <Link className="nav-link" to="/gallery">
             Gallery
-          </NavLink>
+          </Link>
         </NavItem>
         <NavItem>
-          <NavLink className="nav-link" to="/contact">
+          <Link className="nav-link" to="/contact">
             Contact
-          </NavLink>
+          </Link>
         </NavItem>
       </div>
     </div>

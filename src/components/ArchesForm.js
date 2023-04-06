@@ -2,6 +2,7 @@ import { Formik, Form, Field } from "formik";
 import { FormGroup, Label, Input, Col, Row, Button } from "reactstrap";
 import "../components/booking-Form/bookingform.css";
 import ColorPickerForm from "../utils/ColorPicker";
+import { useNavigate } from "react-router-dom";
 
 const initialValues = {
   numArches: 1,
@@ -28,13 +29,17 @@ const initialValues = {
 };
 
 const ArchForm = () => {
+
+  const navigate = useNavigate();
+
   const onSubmit = (values) => {
-    console.log(values);
+    console.log(JSON.stringify(values));
+    navigate("/thankyou");
   };
 
   return (
     <div style={{ paddingBottom: 30 }}>
-      <Formik initialValues={initialValues} onSumbit={onSubmit}>
+      <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values }) => (
           <Form className="form">
             <div className="col-sm-6 ">

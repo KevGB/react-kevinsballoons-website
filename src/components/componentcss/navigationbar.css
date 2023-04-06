@@ -18,10 +18,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 50px;
+  padding: 0px;
   align-items: center;
   list-style-type: none;
   font-weight: bold;
+
 }
 
 .navbar-links{
@@ -29,9 +30,13 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    margin: -10px;
+  }
+}
 
 
 
