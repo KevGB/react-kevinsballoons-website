@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import thankyou from "../app/assets/img/Thankyou.jpg";
+import thankyou from "../app/assets/img/thankyou.jpg";
 import "./pagescss/thankyou.css";
 
 const ThankYouPage = () => {
