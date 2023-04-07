@@ -106,7 +106,7 @@ const ArchForm = () => {
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="archSize" className="col-form-label">
-                  What Style Would You Like? (See the left sidebar for explanations)
+                  What Style Would You Like? (<p className="mobile-message">If you're on mobile, rotate your phone to </p>see the left sidebar for explanations)
                 </Label>
                 <div className="row mt-n4">
                   <Input

@@ -13,9 +13,18 @@
   padding: 30px;
 }
 
+.mobile-message {
+  display: none;
+  color: black;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 768px) {
   .page-content {
     padding-left: 30px;
+  }
+  .mobile-message {
+    display: inline;
   }
 }
 .service-card {
