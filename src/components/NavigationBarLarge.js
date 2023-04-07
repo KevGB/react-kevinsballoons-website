@@ -16,7 +16,7 @@ const NavigationBarLarge = () => {
         </NavItem>
         <NavItem>
           <Link className="nav-link" to="/book">
-            Book
+            Twisting
           </Link>
         </NavItem>
         <NavbarBrand className="logo" href="/">

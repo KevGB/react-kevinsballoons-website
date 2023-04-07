@@ -28,7 +28,7 @@ const GuestsForm = () => {
           {(formikProps) => (
             <Form className="KB-form">
               <FormGroup>
-                <Label>Approximately how many guests/kids do you expect?</Label>
+                <Label>Approximately how many guests/kids do you expect? (drag the slider to change)</Label>
                 <br />
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <input
@@ -56,7 +56,7 @@ const GuestsForm = () => {
                 <Field
                   name="ageRange"
                   className="form-control field"
-                  placeholder="ex. 4-8"
+                  placeholder=""
                 />
               </FormGroup>
               <Button type="submit" color="info">

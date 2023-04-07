@@ -103,23 +103,7 @@ const GarlandsForm = () => {
                   </Input>
                 </div>
               </FormGroup>
-              <FormGroup row className="mt-2">
-                <Label for="garlandSize" className="col-form-label">
-                  What Style Would You Like?
-                </Label>
-                <div className="row mt-n4">
-                  <Input
-                    type="select"
-                    name="garlandStyle"
-                    id="garlandStyle"
-                    className="form-control"
-                  >
-                    <option value=""></option>
-                    <option value="quad">Quad</option>
-                    <option value="organic">Organic</option>
-                  </Input>
-                </div>
-              </FormGroup>
+          
 
               <FormGroup row className="mt-2">
                 <Label for="decorated" className="col-form-label">

@@ -31,6 +31,7 @@ const AdditionalInfo = () => {
       <div className="form">
         <h1 className="form-header">Additional Notes</h1>
         <br />
+        <br />
         <Formik
           initialValues={initialValues}
           validate={validateAdditionalForm}
@@ -60,6 +61,7 @@ const AdditionalInfo = () => {
             <br />
 
             <FormGroup md="12">
+              {tandcShow && <TandC />}
               <Field
                 name="tandc"
                 type="checkbox"
@@ -71,7 +73,6 @@ const AdditionalInfo = () => {
                   T&C
                 </a>
               </Label>
-              {tandcShow && <TandC />}
               <ErrorMessage name="tandc">
                 {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>

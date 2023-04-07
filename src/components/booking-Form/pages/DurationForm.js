@@ -38,7 +38,7 @@ const DurationForm = () => {
               className="form-control field"
               style={{ width: "300px" }}
             >
-              <option value="">Select the number of hours</option>
+              <option value="">Click to select the number of hours</option>
               <option value="1">1 hour</option>
               <option value="1.5">1.5 hours</option>
               <option value="2">2 hours</option>

@@ -13,6 +13,11 @@
   padding: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+  .page-content {
+    padding-left: 30px;
+  }
+}
 .service-card {
   border-radius: 10px;
 }
