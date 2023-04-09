@@ -68,7 +68,7 @@ const ArchForm = () => {
               </FormGroup>
               <FormGroup row className="mt-2">
                 <Label for="fileArch" className="col-form-label">
-                  Upload an image from the internet similar to what you want
+                  Upload an image similar to what you want
                 </Label>
                 <Row className="mt-n4">
                   <Field
