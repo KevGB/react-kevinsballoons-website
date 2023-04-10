@@ -26,7 +26,7 @@ const Servicepage = () => {
                 Kevin's Specialty!
               </p>
               <p className="d-none d-sm-block">
-                Kevin is widely regarded as the best Balloon Twister in the Bay Area (some say in the world, but we'll try to be modest). With mesmerizing soeed and precision, watch as he brings animals and characters to life right before your eyes!
+                Kevin is widely regarded as the best Balloon Twister in the Bay Area (well, most say best in the world, but we're try to be modest). With mesmerizing speed and precision, watch as he brings animals and characters to life right before your eyes!
                 {" "}
                 <Link to='/book'>learn more</Link>
               </p>

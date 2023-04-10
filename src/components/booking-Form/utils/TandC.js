@@ -2,8 +2,8 @@ export const TandC = () => {
   return (
     <div className="tandc">
       <h3>Kevin's Balloons Terms and Conditions</h3>
-      <p>As of March 9, 2023</p>
-      <p>
+      <p>As of April 9, 2023</p>
+      <p style={{color:'black'}}>
       These terms and conditions ("Agreement") constitute a legally binding agreement between the Balloon Artist ("Artist") and the client ("Client"). By booking the Artist's services, the Client agrees to be bound by this Agreement.      </p>
       <ol>
         <li>

@@ -20,7 +20,7 @@ const Header = (props) => {
         <br />
         <div className="  header-btn-container" style={{ display: display }}>
           <button className="booking-btn" onClick={handleBook}>
-            Book Kevin
+            Book Now
           </button>
         </div>
       </div>

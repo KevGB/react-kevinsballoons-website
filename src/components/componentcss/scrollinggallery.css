@@ -49,7 +49,9 @@
 }
 
 h4{
-  /* font-family: alegreya; */
-  font-style: italic;
+  font-family: alegreya;
+  font-style:  italic;
   color: #ffb200;
+  text-shadow: 1px 0px black;
+  font-size: calc(1.75rem + .3vw) !important;
 }

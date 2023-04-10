@@ -3,8 +3,11 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { FormGroup, Label, Button } from "reactstrap";
 import { validateWhereForm } from "../utils/validateWhereForm";
 import "../bookingform.css";
+import { useState, useEffect } from "react";
 
 const WhereForm = () => {
+  const [placeholderText, setPlaceholderText] = useState("");
+
   const initialValues = {
     address: "",
     addressTwo: "",
@@ -22,6 +25,34 @@ const WhereForm = () => {
     console.log(JSON.stringify(values));
     navigate("/bookingFormGuests");
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const placeholderArray = [
+        "example: On a yacht",
+        "example: Dangerous Chocolate Factory",
+        "example: Secret underground city",
+        "example: Hot air balloon",
+        "example: Mt. Doom",
+        "example: Hobbiton",
+        "example: Amazon Rainforest",
+        "example: Top Secret location",
+        "example: Antarctica",
+        "example: Keralan Houseboat",
+        "example: Deserted island",
+        "example: Giant treehouse",
+        "example: Yellow Submarine",
+        "example: Scottish castle",
+        "example: Egyptian tomb",
+        "example: Finnish glass igloo",
+
+      ];
+
+      let num = Math.floor(Math.random() * 16);
+      setPlaceholderText(placeholderArray[num]);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
@@ -86,7 +117,7 @@ const WhereForm = () => {
                 name="locationType"
                 className="form-control field"
               >
-                <option value=""></option>
+                <option value="">Click to select</option>
                 <option value="house">House</option>
                 <option value="apartment">Apartment</option>
                 <option value="daycare">Daycare</option>
@@ -97,12 +128,12 @@ const WhereForm = () => {
                 <option value="Spark Social SF">Spark Social SF</option>
                 <option value="public park">Public Park</option>
               </Field>
-              <Label>If not listed, please specify</Label>
+              <Label>If not listed, please specify:</Label>
               <Field
                 type="text"
                 name="specification"
                 className="form-control field"
-                placeholder="ex: Yacht, Water Park, Chocolate Factory"
+                placeholder={placeholderText}
               />
               <br />
 

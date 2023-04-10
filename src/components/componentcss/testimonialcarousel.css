@@ -17,7 +17,7 @@
 .carousel {
   max-width: 200px;
   position: absolute;
-  top: -50px;
+  top: -90px;
   left: calc(100vh / 12);
 }
  

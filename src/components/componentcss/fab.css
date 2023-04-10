@@ -1,7 +1,7 @@
 .fab {
   background-color: #04d3ead2;
   border-radius: 50%;
-  height: 90px;
+  height: 80px;
   border: 1px solid #ffb200;
   aspect-ratio: 1/1;
   position: fixed;
@@ -14,13 +14,9 @@
   line-height: 1.2em;
 }
 .fab span {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   text-shadow: 2px 1px #ffb200;
 }
 
-/* @media (min-width: 800px) {
-  .fab {
-    display: none;
-  }
-} */
+
