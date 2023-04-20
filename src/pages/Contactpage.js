@@ -1,14 +1,14 @@
 import React from "react";
-import { Formik, Field, Form } from "formik";
+// import { Formik, Field, Form } from "formik";
 import {
-  Container,
-  Row,
+  // Container,
+  // Row,
   Col,
   Form as RSForm,
-  FormGroup,
-  Label,
-  Input,
-  Button,
+  // FormGroup,
+  // Label,
+  // Input,
+  // Button,
 } from "reactstrap";
 import Header from "../components/Header";
 import "./pagescss/contactpage.css"

@@ -92,6 +92,9 @@ const PersonalInfo = () => {
                   placeholder="Instagram"
                   className="form-control field"
                 />
+                <ErrorMessage name="instagram">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
               </Label>
             </FormGroup>
 

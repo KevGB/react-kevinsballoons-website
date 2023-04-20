@@ -1,7 +1,7 @@
 import React from "react";
 import "./componentcss/navigationbar.css";
 import { NavbarBrand, NavItem } from "reactstrap";
-import { NavLink, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 import Logo from "../app/assets/img/BowtieLogo.png";
 

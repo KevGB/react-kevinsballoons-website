@@ -1,7 +1,7 @@
 export const validateForm = (values) => {
   const errors = {};
 
-  const validName = /^[a-z-]+$/i;
+  const validName = /^[a-z- ]+$/i;
   if (!values.firstName) {
     errors.firstName = "First name is required";
   } else if (!validName.test(values.firstName)) {
@@ -21,13 +21,11 @@ export const validateForm = (values) => {
     errors.email = "Double check that this is a valid email address";
   }
 
-  const validPhone = /^(?:(\+\d+)[ -])?\(?\d{3}\)?[ -]?(\d{3})[ -]?(\d{4})$/g;
-  if (!values.phone) {
-    errors.phone = "Phone number is required";
-  } else if (!validPhone.test(values.phone)) {
-    errors.phone =
-      "Try only using numbers and spaces";
-  }
+
+  if (!values.phone && !values.instagram) {
+    errors.phone = "Please include either your phone number";
+    errors.instagram = "or your Instagram handle"
+  } 
 
   // if (!values.tandc) {
   //   errors.tandc = "Required";

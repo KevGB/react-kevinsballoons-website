@@ -22,7 +22,7 @@ const Gallerypage = () => {
         tagline="What can't Kevin make?"
         display="none"
       />
-      <ScrollingGallery />
+   
       <div className="gallery-row">
         <img className="gallery-img" src={garland75} alt="" />
         <img className="gallery-img" src={champagne} alt="" />
