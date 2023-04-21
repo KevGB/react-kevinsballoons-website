@@ -55,13 +55,13 @@ const Footer = () => {
               <div className="social-icons">
                 <a
                   className="btn  btn-instagram"
-                  href="http://instagram.com/kevins.balloons"
+                  href="https://instagram.com/kevins.balloons"
                 >
                   <i className="fa fa-instagram fa-lg" />
                 </a>{" "}
                 <a
                   className="btn btn-facebook"
-                  href="http://www.facebook.com/"
+                  href="https://www.facebook.com/"
                 >
                   <i className="fa fa-facebook fa-lg" />
                 </a>{" "}
@@ -73,7 +73,7 @@ const Footer = () => {
                 </a>{" "}
                 <a
                   className="btn btn-google"
-                  href="http://youtube.com/"
+                  href="https://youtube.com/"
                 >
                   <i className="fa fa-lg fa-youtube" />
                 </a>
