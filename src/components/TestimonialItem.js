@@ -8,7 +8,7 @@ const TestimonialItem = ({ testimonial }) => {
         maxWidth: "200px",
         paddingLeft: "14px",
         paddingRight: "10px",
-        backgroundColor: "#03a4b6eb",
+        backgroundColor: "#03a4b6ae",
         borderRadius: "20px",
         height: "300px"
     }}>

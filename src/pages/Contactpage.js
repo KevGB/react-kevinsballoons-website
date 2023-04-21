@@ -29,7 +29,7 @@ const Contactpage = () => {
             <a href="mailto:kevinsballoons@gmail.com">
               <i className="fa fa-envelope mb-2" size={60} />
               <h2>Email</h2>
-              <h5>kevinsballoons@gmail.com</h5>
+              <h6>kevinsballoons@gmail.com</h6>
             </a>
           </Col>
 
@@ -43,7 +43,7 @@ const Contactpage = () => {
 
           <Col sm="4" className="contact-box">
             <Link to="/book">
-              <i className="fa fa-mobile mb-2" size={60} />
+              <i className="fa fa-book mb-2" size={60} />
               <h2>Book Kevin</h2>
               <h6>for your event!</h6>
             </Link>
