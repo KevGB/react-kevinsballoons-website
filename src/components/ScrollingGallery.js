@@ -53,6 +53,21 @@ const ScrollingGallery = () => {
         <img src={kidsbirthday} alt="" />
         <img src={yay} alt="" />
 
+        <img src={garland50} alt="" />
+        <img src={duck} alt="" />
+        <img src={columns} alt="" />
+        <img src={owl} alt="" />
+        <img src={garland75} alt="" />
+        <img src={frog} alt="" />
+        <img src={champagne} alt="" />
+        <img src={easter} alt="" />
+        <img src={bike} alt="" />
+        <img src={pet} alt="" />
+        <img src={kite} alt="" />
+        <img src={santa} alt="" />
+        <img src={mermaid} alt="" />
+        <img src={kidsbirthday} alt="" />
+        <img src={yay} alt="" />
 
 
       </div>

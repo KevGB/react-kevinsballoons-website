@@ -13,7 +13,7 @@
 }
 
 .initiate-scroll {
-  animation: galleryscroll 15s linear infinite;
+  animation: galleryscroll 18s linear infinite;
 }
 
 @keyframes galleryscroll {
