@@ -22,12 +22,12 @@ const Servicepage = () => {
             <Col xs="8" className="service-text">
               <h6>Balloon Twisting</h6>
               <p>
-                {" "}
+                
                 Kevin's Specialty!
               </p>
               <p className="d-none d-sm-block">
                 Kevin is widely regarded as the best Balloon Twister in the Bay Area (well, most say best in the world, but we're try to be modest). With mesmerizing speed and precision, watch as he brings animals and characters to life right before your eyes!
-                {" "}
+                
                 <Link to='/book'>learn more</Link>
               </p>
             </Col>
