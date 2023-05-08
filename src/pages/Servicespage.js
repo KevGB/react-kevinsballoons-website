@@ -15,24 +15,24 @@ const Servicepage = () => {
     <>
       <Header headline="Services" tagline="Party Decor & more" display="none" />
       <div className="page-content">
-
         <Container style={{ width: "800px" }}>
-
-        <Row className="service-row ser-teal" onClick = {()=> navigate("/book")} >
+          <Row
+            className="service-row ser-teal"
+            onClick={() => navigate("/book")}
+          >
             <Col xs="8" className="service-text">
               <h6>Balloon Twisting</h6>
-              <p>
-                
-                Kevin's Specialty!
-              </p>
+              <p>Kevin's Specialty!</p>
               <p className="d-none d-sm-block">
-                Kevin is widely regarded as the best Balloon Twister in the Bay Area (well, most say best in the world, but we're try to be modest). With mesmerizing speed and precision, watch as he brings animals and characters to life right before your eyes!
-                
-                <Link to='/book'>learn more</Link>
+                Kevin is widely regarded as the best Balloon Twister in the Bay
+                Area (well, most say best in the world, but we're try to be
+                modest). With mesmerizing speed and precision, watch as he
+                brings animals and characters to life right before your eyes!
+                <Link to="/book">learn more</Link>
               </p>
             </Col>
             <Col xs="4" className="p-0 justify-content-center d-flex">
-              <Link to='/garlands'>
+              <Link to="/garlands">
                 <img src={twisting} alt="" className="service-img" />
               </Link>
             </Col>
