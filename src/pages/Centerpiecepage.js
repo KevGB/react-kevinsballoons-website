@@ -12,7 +12,6 @@ const InfoCard = () => {
       class="service-card  d-none d-sm-block"
       style={{ width: "20rem", padding: 0 }}
       className="d-none d-sm-block"
-
     >
       <CardBody>
         <p className="service-description ">
@@ -29,7 +28,7 @@ const InfoCard = () => {
       </CardBody>
       <CardImg src={car} />
       <CardBody>
-Want a full-sized car for your guests to take photos in? No problem!{" "}
+        Want a full-sized car for your guests to take photos in? No problem!{" "}
       </CardBody>
       <CardImg src={owl} />
       <CardBody>Realistic and creative jubmo animals and characters!</CardBody>
