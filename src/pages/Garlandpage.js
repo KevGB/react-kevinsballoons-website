@@ -12,7 +12,6 @@ const InfoCard = () => {
       class="service-card  d-none d-sm-block"
       style={{ width: "20rem", padding: 0 }}
       className="d-none d-sm-block"
-
     >
       <CardBody>
         <p className="service-description ">
@@ -27,9 +26,9 @@ const InfoCard = () => {
           for your guests. Whether you're hosting a birthday party, bridal
           shower, wedding, or any other celebration, a balloon garland can add
           that extra touch of fun and elegance. Ask Kevin to add his famous
-          balloon twisting designs to make your garlands truly 1 of a kind! So why
-          not add some balloons to your next party and see the magic they bring
-          to your event?
+          balloon twisting designs to make your garlands truly 1 of a kind! So
+          why not add some balloons to your next party and see the magic they
+          bring to your event?
         </p>
       </CardBody>
       <CardImg src={champimage} />
@@ -39,8 +38,8 @@ const InfoCard = () => {
       </CardBody>
       <CardImg src={flowerimg} />
       <CardBody>
-      They can be used to highlight a specific area, like a staircase for a grand entrance, a car, or serve
-          as a backdrop for photos.{" "}
+        They can be used to highlight a specific area, like a staircase for a
+        grand entrance, a car, or serve as a backdrop for photos.{" "}
       </CardBody>
       <CardImg src={mermaidimage} />
       <CardBody>The possibilities are endless!</CardBody>
