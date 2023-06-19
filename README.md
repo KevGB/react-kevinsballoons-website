@@ -22,3 +22,14 @@ We welcome contributions to Kevin's Balloons. If you find a bug, have a suggesti
 
 
 Thank you for choosing Kevin's Balloons for your next event. We can't wait to make it unforgettable!
+
+
+
+
+
+TODO:
+Refactor the Booking Form
+Create Modal for booking Other items
+Create database to store info 
+Create alert system
+Correct Styling issues
