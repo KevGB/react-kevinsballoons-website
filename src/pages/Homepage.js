@@ -20,7 +20,7 @@ const Homepage = () => {
       <FAB className="fab" />
       <SectionMarketing />
       <div className=" testimonial-section">
-        <ScrollingLogos  />
+        <ScrollingLogos />
         <TestimonialCarousel className="testimonialcarousel " />
       </div>
       {/* <SubscribeForm /> */}
