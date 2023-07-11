@@ -21,6 +21,8 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import "./App.css";
 
+import TwistingForm from "./components/twistingform/twistingform";
+
 function App() {
   return (
     <div className="App">
@@ -43,6 +45,9 @@ function App() {
         <Route path="bookingformwhere" element={<WhereForm />} />
         <Route path="bookingformguests" element={<GuestsForm />} />
         <Route path="bookingformadditional" element={<AdditionalInfo />} />
+        
+        <Route path="twistingform" element={<TwistingForm />} />
+      
       </Routes>
       <Footer />
     </div>

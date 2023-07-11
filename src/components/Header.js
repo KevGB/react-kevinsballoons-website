@@ -22,6 +22,8 @@ const Header = (props) => {
           <button className="booking-btn" onClick={handleBook}>
             Book Now
           </button>
+          <button onClick={()=>{navigate('/twistingform')}}>twisting form</button>
+
         </div>
       </div>
       <CyclicGallery />
