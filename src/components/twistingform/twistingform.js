@@ -9,6 +9,7 @@ const TwistingForm = () => {
     duration: '',
     address: '',
     address2: '',
+    addressName:'',
     firstName: '',
     lastName: '',
     email: '',
@@ -45,7 +46,8 @@ const TwistingForm = () => {
       case 1:
         return (
           <div className='form-div'>
-            <label>Date:</label>
+            <h2 className='twisting-h2'>When do you need Kevin?</h2>
+            <label className='twisting-label'>Date:</label>
             <input
               type="date"
               name="date"
@@ -53,6 +55,7 @@ const TwistingForm = () => {
               value={formData.date}
               onChange={handleInputChange}
             />
+            <label className='twisting-label'>Time:</label>
              <input
               type="time"
               name="time"
@@ -65,10 +68,11 @@ const TwistingForm = () => {
       case 2:
         return (
           <div  className='form-div'>
-            <label>How long do you need Balloon Twisting?:</label>
+            <h2 className='twisting-h2'>How long do you need Kevin?</h2>
+            <label className='twisting-label'>Select number of hours:</label>
             <select
               name="duration"
-              className='form-control'
+              className='form-control twisting-select'
               value={formData.duration}
               onChange={handleInputChange}
             >
@@ -85,88 +89,10 @@ const TwistingForm = () => {
               <option value="5.5 hr">5.5 hr</option>
               <option value="6 hr">6 hr</option>
             </select>
-          </div>
-        );
-      case 3:
-        return (
-          <div className='form-div'>
-            <label>Event Address:</label>
-            <input
-              type="text"
-              name="address"
-              className='form-control'
-              value={formData.address}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              name="address2"
-              className='form-control'
-              value={formData.address2}
-              onChange={handleInputChange}
-            />
-          </div>
-        );
-      case 4:
-        return (
-          <div className='form-div'>
-            <label>Your Info:</label>
-            <input
-              type="text"
-              name="firstName"
-              className='form-control'
-              value={formData.firstName}
-              placeholder='Your first name'
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              name="lastName"
-              className='form-control'
-              value={formData.lastName}
-              placeholder='Your last name'
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              name="email"
-              className='form-control'
-              value={formData.email}
-              placeholder='Your email'
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              name="phone"
-              className='form-control'
-              value={formData.phone}
-              placeholder='Your phone number'
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              name="instagram"
-              className='form-control'
-              value={formData.instagram}
-              placeholder='If you prefer Instagram messaging, your IG handle'
-              onChange={handleInputChange}
-            />
-          </div>
-        );
-      case 5:
-        return (
-          <div className='form-div'>
-            <button >Open Modal</button>
-            {/* <button onClick={openModal}>Open Modal</button> */}
-          </div>
-        );
-      case 6:
-        return (
-          <div className='additional-info-div'>
-            <label>Additional Information *not required, but helpful for me*:</label>
+            <label className='twisting-label'>Event Type</label>
             <select
               name="eventType"
-              className='form-control'
+              className='form-control twisting-select'
               value={formData.eventType}
               onChange={handleInputChange}
             >
@@ -182,9 +108,107 @@ const TwistingForm = () => {
               <option value="Carnival">Carnival</option>
               
             </select>
+          </div>
+        );
+      case 3:
+        return (
+          <div className='form-div'>
+            <h2 className='twisting-h2'>Location of your Event</h2>
+            <label className='twisting-label'>Event Address</label>
+            <input
+              type="text"
+              name="address"
+              className='form-control'
+              value={formData.address}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="address2"
+              className='form-control'
+              value={formData.address2}
+              onChange={handleInputChange}
+            />
+            <p></p>
+            <p className='twisting-p or'>Or</p>
+            <label className='twisting-label'>Location Name or Google Maps Link</label>
+            <input
+              type="text"
+              name="addressName"
+              className='form-control'
+              value={formData.addressName}
+              onChange={handleInputChange}
+            />
+           
+          </div>
+        );
+      case 4:
+        return (
+          <div className='form-div'>
+            <h2 className='twisting-h2'>Your Info</h2>
+            <label className='twisting-label'>First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              className='form-control'
+              value={formData.firstName}
+              onChange={handleInputChange}
+            />
+            <label className='twisting-label'>Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              className='form-control'
+              value={formData.lastName}
+              onChange={handleInputChange}
+            />
+            <label className='twisting-label'>Email</label>
+            <input
+              type="text"
+              name="email"
+              className='form-control'
+              value={formData.email}
+              placeholder='iloveballoons18492@balloon.pop'
+              onChange={handleInputChange}
+            />
+            <label className='twisting-label'>Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              className='form-control'
+              value={formData.phone}
+              placeholder='555-555-5555'
+              onChange={handleInputChange}
+            />
+            <label className='twisting-label'>Instagram Handle</label>
+            <input
+              type="text"
+              name="instagram"
+              className='form-control'
+              value={formData.instagram}
+              placeholder='If you prefer Instagram messaging'
+              onChange={handleInputChange}
+            />
+          </div>
+        );
+      case 5:
+        return (
+          <div className='form-div'>
+            <h2 className='twisting-h2'>Add-ons</h2>
+            <button >Open Modal</button>
+            {/* <button onClick={openModal}>Open Modal</button> */}
+          </div>
+        );
+      case 6:
+        return (
+          <div className='additional-info-div'>
+            <h2 className='twisting-h2'>Additional Information</h2>
+            <p className='twisting-p'>Not required, but useful for Kevin. Feel free to skip</p>
+            
+            <label className='twisting-label'>Location Type</label>
             <select
               name="eventSetting"
-              className='form-control'
+              className='form-control twisting-select'
               value={formData.eventSetting}
               onChange={handleInputChange}
             >
@@ -201,6 +225,7 @@ const TwistingForm = () => {
               <option value="Daycare">Daycare</option>
               
             </select>
+            <label className='twisting-label'>Number of Guests</label>
             <div style={{ display: "flex", justifyContent: "center" }}>
                   <input
                     type="range"
@@ -217,14 +242,16 @@ const TwistingForm = () => {
                     {formData.numGuests}
                   </span>
                 </div>
+                <label className='twisting-label'>Age Range</label>
             <input
               type="text"
               name="ageRange"
               className='form-control'
               value={formData.ageRange}
-              placeholder='Age Range? ex: 3-7'
+              placeholder='ex: 3-7'
               onChange={handleInputChange}
             />
+            <label className='twisting-label'>Parking</label>
             <input
               type="text"
               name="parking"
@@ -233,12 +260,13 @@ const TwistingForm = () => {
               placeholder='Where can Kevin park?'
               onChange={handleInputChange}
             />
+            <p></p>
             <input
               type="text"
               name="referal"
               className='form-control'
               value={formData.referal}
-              placeholder="How did you hear about Kevin's Balloons?"
+              placeholder="How did you hear about us?"
               onChange={handleInputChange}
             />
             <input
@@ -246,7 +274,7 @@ const TwistingForm = () => {
               name="additionalNotes"
               className='form-control'
               value={formData.additionalNotes}
-              placeholder='Any additional notes about your event?'
+              placeholder='Any additional notes?'
               onChange={handleInputChange}
             />
 
@@ -255,20 +283,21 @@ const TwistingForm = () => {
       case 7:
         return (
           <div>
-            <h3>Your Event *please check the info is correct before you submit*:</h3>
-            <p><span>Date:</span> {formData.date}</p>
-            <p><span>Time:</span> {formData.time}</p>
-            <p><span>How long:</span> {formData.duration}</p>
-            <p><span>Location:</span> {formData.address} {formData.address2}</p>
-            <p><span>Your Info:</span> {formData.firstName} {formData.lastName}</p>
-            <p><span>Contact Info:</span> {formData.email}, {formData.phone}, {formData.instagram}</p>
-            <p><span>Additional Info:</span> </p>
-            <p><span>Event Type:</span> {formData.eventType}</p>
-            <p><span>Event Setting:</span> {formData.eventSetting}</p>
-            <p><span>Number of Guests:</span> {formData.numGuests}</p>
-            <p><span>Age Range of Guests:</span> {formData.ageRange}</p>
-            <p><span>Parking:</span> {formData.parking}</p>
-            <p><span>Additional Notes:</span> {formData.additionalNotes}</p>
+            <label className='twisting-label'>Your Event *please check the info is correct before you submit*:</label>
+           
+            <p className='twisting-p'><span>Date:</span> {formData.date}</p>
+            <p className='twisting-p'><span>Time:</span> {formData.time}</p>
+            <p className='twisting-p'><span>How long:</span> {formData.duration}</p>
+            <p className='twisting-p'><span>Location:</span> {formData.address} {formData.address2} {formData.addressName}</p>
+            <p className='twisting-p'><span>Your Info:</span> {formData.firstName} {formData.lastName}</p>
+            <p className='twisting-p'><span>Contact Info:</span> {formData.email}, {formData.phone}, {formData.instagram}</p>
+            <p className='twisting-p'><span>Additional Info:</span> </p>
+            <p className='twisting-p'><span>Event Type:</span> {formData.eventType}</p>
+            <p className='twisting-p'><span>Event Setting:</span> {formData.eventSetting}</p>
+            <p className='twisting-p'><span>Number of Guests:</span> {formData.numGuests}</p>
+            <p className='twisting-p'><span>Age Range of Guests:</span> {formData.ageRange}</p>
+            <p className='twisting-p'><span>Parking:</span> {formData.parking}</p>
+            <p className='twisting-p'><span>Additional Notes:</span> {formData.additionalNotes}</p>
           </div>
       
         );
@@ -279,18 +308,20 @@ const TwistingForm = () => {
 
   return (
     <div className='container'>
-      <h2>Book Balloon Twisting for your Event!</h2>
-      <div className="card-container">{renderCard(currentCard)}</div>
+      <h2>Book Kevin's World-Famous Balloon Twisting for your Event!</h2>
+      <div className="card-container">{renderCard(currentCard)}
       <div className="button-container">
         {currentCard > 1 && (
-          <button onClick={handlePreviousCard}>Previous</button>
+          <button className='form-nav-button'
+          onClick={handlePreviousCard}>Previous</button>
         )}
         {currentCard < 7 ? (
-          <button onClick={handleNextCard}>Next</button>
+          <button className='form-nav-button' onClick={handleNextCard}>Next</button>
         ) : (
         //   <button onClick={handleSubmit}>Submit</button>
           <button >Submit</button>
         )}
+      </div>
       </div>
     </div>
   );
